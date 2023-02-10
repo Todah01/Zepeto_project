@@ -1,0 +1,29 @@
+{
+	"id": "zepeto-script-compiler@0.1.83",
+	"name": "zepeto-script-compiler",
+	"version": "0.1.83",
+	"size": 9271,
+	"unpackedSize": 31274,
+	"shasum": "faf23d73c93b8c39b9f2ff7d14da89b198549af6",
+	"integrity": "sha512-7LEYXqt6FwyxNqlS1/y3QRUmCs3HWl3b9600Il1MKTNjCc5J0RUXTUbRvm8jGgJcQPJfKmu8mI7/9Hinxxs9Hw==",
+	"filename": "zepeto-script-compiler-0.1.83.tgz",
+	"files": [
+		{
+			"path": "dist/index.js",
+			"size": 28738,
+			"mode": 493
+		},
+		{
+			"path": "package.json",
+			"size": 595,
+			"mode": 420
+		},
+		{
+			"path": "README.md",
+			"size": 1941,
+			"mode": 420
+		}
+	],
+	"entryCount": 3,
+	"bundled": []
+}

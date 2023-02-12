@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638116918697789160
-    m_Hash: 161366098
+      ticks: 638117808193950686
+    m_Hash: 1998102949
   m_LockFileStatus:
     m_FilePath: C:/Users/wobo5/PersonalProject/Zepeto_project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638116918697877096
-    m_Hash: 1070308922
+      ticks: 638117808193950686
+    m_Hash: 4224672247
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

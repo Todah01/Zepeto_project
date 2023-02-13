@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scene/CharacterControllerSample.unity
+- path: Assets/Scene/summon_in_zepeto.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

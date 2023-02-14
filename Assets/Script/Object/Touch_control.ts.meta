@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: 0e1c72122ac4c8d4fb3a6bb7967d47e0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass Touch_control extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Update() {\r\n        this.TouchControl();\r\n    }\r\n    TouchControl()
+    {\r\n        if (UnityEngine_1.Input.GetMouseButtonDown(0)) {\r\n           
+    let ray = UnityEngine_1.Camera.main.ScreenPointToRay(UnityEngine_1.Input.mousePosition);\r\n           
+    // Please note that In order to retain the RaycastHit information as an output
+    parameter it must be wrapped in a $ref tag. \r\n            // Because we require
+    the out qualifier as a parameter, we create a reference without actually creating
+    an object.          \r\n            let ref = $ref();\r\n            if (UnityEngine_1.Physics.Raycast(ray,
+    ref, 1000)) {\r\n                // To check the returned Raycast hit data, please
+    remember to unwrap the reference by using $unref\r\n                let hitInfo
+    = $unref(ref);\r\n                console.log(`Detect Hit!`);\r\n               
+    console.log(`hitInfo.collider.name : ${hitInfo.collider.name}`);\r\n           
+    }\r\n            else {\r\n                console.log(`Failed to Detect Collision`);\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = Touch_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG91Y2hfY29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRvdWNoX2NvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQWlFO0FBRWpFLE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFFNUQsTUFBTTtRQUNGLElBQUksQ0FBQyxZQUFZLEVBQUUsQ0FBQztJQUN4QixDQUFDO0lBRUQsWUFBWTtRQUNSLElBQUksbUJBQUssQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDLENBQUMsRUFBRTtZQUM3QixJQUFJLEdBQUcsR0FBRyxvQkFBTSxDQUFDLElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxtQkFBSyxDQUFDLGFBQWEsQ0FBQyxDQUFDO1lBRTVELDJIQUEySDtZQUMzSCw0SEFBNEg7WUFDNUgsSUFBSSxHQUFHLEdBQUcsSUFBSSxFQUFjLENBQUM7WUFFN0IsSUFBSSxxQkFBTyxDQUFDLE9BQU8sQ0FBQyxHQUFHLEVBQUUsR0FBRyxFQUFFLElBQUksQ0FBQyxFQUFFO2dCQUNqQyxrR0FBa0c7Z0JBQ2xHLElBQUksT0FBTyxHQUFHLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFFMUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxhQUFhLENBQUMsQ0FBQztnQkFDM0IsT0FBTyxDQUFDLEdBQUcsQ0FBQywyQkFBMkIsT0FBTyxDQUFDLFFBQVEsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO2FBQ25FO2lCQUFNO2dCQUNILE9BQU8sQ0FBQyxHQUFHLENBQUMsNEJBQTRCLENBQUMsQ0FBQzthQUM3QztTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBekJELGdDQXlCQyJ9","assetPath":"Assets/Script/Object/touch_control.ts","manifest":{"properties":[],"name":"Touch_control","description":""},"isCompiled":true}'
+  typescriptHash: c661bc366d3b43bc625f0643f73573ad
+  onlyWriteTrigger: 0

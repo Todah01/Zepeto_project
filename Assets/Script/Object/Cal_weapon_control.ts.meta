@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 5e4c9df7ef963574d85346134165d790
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Cal_weapon_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Awake()
+    {\r\n        // Direct access by name\r\n        console.log(`name : ${this.Spear.get_Item(\"name\")}`);\r\n       
+    console.log(`price : ${this.Spear.get_Item(\"price\")}`);\r\n        console.log(`name
+    : ${this.Staff.get_Item(\"name\")}`);\r\n        console.log(`price : ${this.Staff.get_Item(\"price\")}`);\r\n       
+    console.log(`name : ${this.Bow.get_Item(\"name\")}`);\r\n        console.log(`price
+    : ${this.Bow.get_Item(\"price\")}`);\r\n    }\r\n}\r\nexports.default = Cal_weapon_control;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FsX3dlYXBvbl9jb250cm9sLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2FsX3dlYXBvbl9jb250cm9sLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQTZFO0FBRTdFLE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQU1qRSxLQUFLO1FBQ0Qsd0JBQXdCO1FBQ3hCLE9BQU8sQ0FBQyxHQUFHLENBQUMsVUFBVSxJQUFJLENBQUMsS0FBSyxVQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUMsQ0FBQztRQUM1QyxPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsSUFBSSxDQUFDLEtBQUssVUFBQyxPQUFPLENBQUMsRUFBRSxDQUFDLENBQUM7UUFDOUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxVQUFVLElBQUksQ0FBQyxLQUFLLFVBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQyxDQUFDO1FBQzVDLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxJQUFJLENBQUMsS0FBSyxVQUFDLE9BQU8sQ0FBQyxFQUFFLENBQUMsQ0FBQztRQUM5QyxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsSUFBSSxDQUFDLEdBQUcsVUFBQyxNQUFNLENBQUMsRUFBRSxDQUFDLENBQUM7UUFDMUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLElBQUksQ0FBQyxHQUFHLFVBQUMsT0FBTyxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQ2hELENBQUM7Q0FDSjtBQWZELHFDQWVDIn0=","assetPath":"Assets/Script/Object/Cal_weapon_control.ts","manifest":{"properties":[{"assembly":"ZEPETO.Script","name":"Spear","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"ZEPETO.Script","name":"Staff","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"ZEPETO.Script","name":"Bow","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Cal_weapon_control","description":""},"isCompiled":true}'
+  typescriptHash: 18a64cfad97029e6daea9b722510833c
+  onlyWriteTrigger: 0

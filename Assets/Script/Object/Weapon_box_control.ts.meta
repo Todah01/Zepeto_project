@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 63b308d51605af74d9aab5cca7580dd9
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Weapon_box_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnTriggerEnter(coll)
+    {\r\n        if (coll.gameObject.layer == this.player_layer) {\r\n           
+    this.rainforce_table.SetActive(true);\r\n        }\r\n    }\r\n    OnTriggerExit(coll)
+    {\r\n        console.log(`OnTriggerExit ${coll.gameObject.name}.`);\r\n       
+    this.rainforce_table.SetActive(false);\r\n    }\r\n}\r\nexports.default = Weapon_box_control;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV2VhcG9uX2JveF9jb250cm9sLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiV2VhcG9uX2JveF9jb250cm9sLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBR3JELE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUtqRSxjQUFjLENBQUMsSUFBYztRQUN6QixJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsS0FBSyxJQUFJLElBQUksQ0FBQyxZQUFZLEVBQUU7WUFDNUMsSUFBSSxDQUFDLGVBQWUsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7U0FDeEM7SUFDTCxDQUFDO0lBQ0QsYUFBYSxDQUFDLElBQWM7UUFDeEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxpQkFBaUIsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDO1FBQ3RELElBQUksQ0FBQyxlQUFlLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQzFDLENBQUM7Q0FDSjtBQWRELHFDQWNDIn0=","assetPath":"Assets/Script/Object/Weapon_box_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"player_layer","type":"System.Int32","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"rainforce_table","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Weapon_box_control","description":""},"isCompiled":true}'
+  typescriptHash: ec8e90a318c2c1f0df9b8f640a98b123
+  onlyWriteTrigger: 0

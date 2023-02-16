@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 3fbc48ac8dfe67b43ba4e9806dade270
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Heart_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.gem_cnt = 0;\r\n    }\r\n   
+    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.layer == this.player_layer)
+    {\r\n            console.log(`OnTriggerEnter ${coll.gameObject.name}.`);\r\n           
+    this.gem_cnt += 1;\r\n            this.gem_cnt_txt.text = this.gem_cnt.toString();\r\n       
+    }\r\n    }\r\n}\r\nexports.default = Heart_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGVhcnRfY29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkhlYXJ0X2NvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFJckQsTUFBcUIsYUFBYyxTQUFRLHFDQUFxQjtJQUFoRTs7UUFJWSxZQUFPLEdBQVEsQ0FBQyxDQUFDO0lBUzdCLENBQUM7SUFQRyxjQUFjLENBQUMsSUFBYztRQUN6QixJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsS0FBSyxJQUFJLElBQUksQ0FBQyxZQUFZLEVBQUU7WUFDNUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxrQkFBa0IsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDO1lBQ3ZELElBQUksQ0FBQyxPQUFPLElBQUksQ0FBQyxDQUFDO1lBQ2xCLElBQUksQ0FBQyxXQUFXLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsUUFBUSxFQUFFLENBQUM7U0FDbkQ7SUFDTCxDQUFDO0NBQ0o7QUFiRCxnQ0FhQyJ9","assetPath":"Assets/Script/Object/Heart_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"player_layer","type":"System.Int32","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"gem_cnt_txt","type":"UnityEngine.UI.Text","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Heart_control","description":""},"isCompiled":true}'
+  typescriptHash: c3ec3040d241f7771283f29880300f09
+  onlyWriteTrigger: 0

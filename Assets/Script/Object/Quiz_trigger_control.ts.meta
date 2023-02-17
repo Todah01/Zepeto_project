@@ -19,12 +19,14 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
-    Quiz_trigger_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnTriggerEnter(coll)
-    {\r\n        if (coll.gameObject.layer == this.player_layer) {\r\n           
-    console.log(\"Player In\");\r\n            this.player_in.Invoke();\r\n       
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst QuizManager_1 = require(\"./QuizManager\");\r\nclass
+    Quiz_trigger_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.quiz_manager = this.QuizManager.GetComponent($typeof(QuizManager_1.default));\r\n   
+    }\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.layer == this.player_layer)
+    {\r\n            console.log(\"Player In\");\r\n            this.quiz_manager.quiz_start();\r\n       
     }\r\n    }\r\n    OnTriggerExit(coll) {\r\n        console.log(\"Player Out\");\r\n       
-    this.player_out.Invoke();\r\n    }\r\n}\r\nexports.default = Quiz_trigger_control;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUXVpel90cmlnZ2VyX2NvbnRyb2wuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJRdWl6X3RyaWdnZXJfY29udHJvbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUlyRCxNQUFxQixvQkFBcUIsU0FBUSxxQ0FBcUI7SUFNbkUsY0FBYyxDQUFDLElBQWM7UUFDekIsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLEtBQUssSUFBSSxJQUFJLENBQUMsWUFBWSxFQUFFO1lBQzVDLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxDQUFDLENBQUM7WUFDekIsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLEVBQUUsQ0FBQztTQUMzQjtJQUNMLENBQUM7SUFFRCxhQUFhLENBQUMsSUFBYztRQUN4QixPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDO1FBQzFCLElBQUksQ0FBQyxVQUFVLENBQUMsTUFBTSxFQUFFLENBQUM7SUFDN0IsQ0FBQztDQUNKO0FBakJELHVDQWlCQyJ9","assetPath":"Assets/Script/Object/Quiz_trigger_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"player_layer","type":"System.Int32","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"player_out","type":"UnityEngine.Events.UnityEvent","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"player_in","type":"UnityEngine.Events.UnityEvent","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Quiz_trigger_control","description":""},"isCompiled":true}'
-  typescriptHash: 668f1254455f2af496b7d5ceec96431a
+    this.quiz_manager.quiz_end();\r\n    }\r\n}\r\nexports.default = Quiz_trigger_control;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUXVpel90cmlnZ2VyX2NvbnRyb2wuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJRdWl6X3RyaWdnZXJfY29udHJvbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2Q0FBZ0Y7QUFFaEYsK0NBQXdDO0FBRXhDLE1BQXFCLG9CQUFxQixTQUFRLHFDQUFxQjtJQU9uRSxLQUFLO1FBQ0QsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksU0FBQyxxQkFBVyxFQUFHLENBQUM7SUFDckUsQ0FBQztJQUVELGNBQWMsQ0FBQyxJQUFjO1FBQ3pCLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxLQUFLLElBQUksSUFBSSxDQUFDLFlBQVksRUFBRTtZQUM1QyxPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1lBQ3pCLElBQUksQ0FBQyxZQUFZLENBQUMsVUFBVSxFQUFFLENBQUM7U0FDbEM7SUFDTCxDQUFDO0lBRUQsYUFBYSxDQUFDLElBQWM7UUFDeEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsQ0FBQztRQUMxQixJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsRUFBRSxDQUFDO0lBQ2pDLENBQUM7Q0FDSjtBQXRCRCx1Q0FzQkMifQ==","assetPath":"Assets/Script/Object/Quiz_trigger_control.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"QuizManager","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"player_layer","type":"System.Int32","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Quiz_trigger_control","description":""},"isCompiled":true}'
+  typescriptHash: cb887b245f91740c54e12f09f11141df
   onlyWriteTrigger: 0

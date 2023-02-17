@@ -28,13 +28,13 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         });
     }
 
-    quiz_start() {
+    public quiz_start() {
         this.quiz_ui.SetActive(true);
     }
 
-    quiz_reset() {
+    public quiz_end() {
         this.quiz_ui.SetActive(false);
-        this.quiz_quiz_tab.SetActive(false);
         this.quiz_select_tab.SetActive(true);
+        this.quiz_quiz_tab.SetActive(false);
     }
 }

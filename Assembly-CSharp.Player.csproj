@@ -78,13 +78,13 @@
      <None Include="Assets\Resources\RPGMonsterWave02PBR\Shaders\PBRMaskTint.shader" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX Remaster\Readme Cartoon FX Remaster FREE.txt" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
-     <None Include="Assets\Ultra Skybox Fog\Textures\Readme.txt" />
+     <None Include="Assets\Resources\Ultra Skybox Fog\Textures\Readme.txt" />
      <None Include="Assets\Resources\RPGMonsterWave02PBR\SRP\HowToTestSRPs.txt" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Procedural Ring.shader" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
-     <None Include="Assets\Ultra Skybox Fog\Shaders\UltraSkyboxFog.shader" />
-     <None Include="Assets\Ultra Skybox Fog\Manual.txt" />
+     <None Include="Assets\Resources\Ultra Skybox Fog\Shaders\UltraSkyboxFog.shader" />
+     <None Include="Assets\Resources\Ultra Skybox Fog\Manual.txt" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Distortion.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Users\wobo5\PersonalProject\2020.3.9f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>

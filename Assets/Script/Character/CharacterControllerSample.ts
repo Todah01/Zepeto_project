@@ -4,7 +4,7 @@ import { SpawnInfo, ZepetoPlayer, ZepetoPlayers } from "ZEPETO.Character.Control
 export default class CharacterControllerSample extends ZepetoScriptBehaviour {
 
     Start() {
-        ZepetoPlayers.instance.CreatePlayerWithZepetoId("todah01", "todah01", new SpawnInfo(), true);
+        ZepetoPlayers.instance.CreatePlayerWithZepetoId("", "todah01", new SpawnInfo(), true);
         ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(() => {
             let _plater = ZepetoPlayers.instance.LocalPlayer;
         })

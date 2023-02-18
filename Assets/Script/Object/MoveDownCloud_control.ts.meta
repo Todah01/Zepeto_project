@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: b5eaeb40c9c19a64b8a295102f4bb499
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass MoveDownCloud_control extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n        super(...arguments);\r\n       
+    this.moveSpeed = 0.5;\r\n    }\r\n    Update() {\r\n        this.transform.position
+    = UnityEngine_1.Vector3.Lerp(this.transform.position, this.checkBoard.transform.position,
+    UnityEngine_1.Time.deltaTime * this.moveSpeed);\r\n    }\r\n    OnTriggerEnter(coll)
+    {\r\n        console.log(`OnTriggerEnter ${coll.gameObject.name}.`);\r\n       
+    if (coll.gameObject.CompareTag(\"upper_board\")) {\r\n            this.checkBoard
+    = this.downBoard;\r\n        }\r\n        if (coll.gameObject.CompareTag(\"down_board\"))
+    {\r\n            this.checkBoard = this.upperBoard;\r\n        }\r\n    }\r\n}\r\nexports.default
+    = MoveDownCloud_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW92ZURvd25DbG91ZF9jb250cm9sLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTW92ZURvd25DbG91ZF9jb250cm9sLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZDQUFrRjtBQUVsRixNQUFxQixxQkFBc0IsU0FBUSxxQ0FBcUI7SUFBeEU7O1FBRVcsY0FBUyxHQUFXLEdBQUcsQ0FBQztJQW9CbkMsQ0FBQztJQWZHLE1BQU07UUFDRixJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxxQkFBTyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUUsa0JBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQ3pJLENBQUM7SUFFRCxjQUFjLENBQUMsSUFBYztRQUN6QixPQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFrQixJQUFJLENBQUMsVUFBVSxDQUFDLElBQUksR0FBRyxDQUFDLENBQUM7UUFFdkQsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLFVBQVUsQ0FBQyxhQUFhLENBQUMsRUFBRTtZQUMzQyxJQUFJLENBQUMsVUFBVSxHQUFHLElBQUksQ0FBQyxTQUFTLENBQUM7U0FDcEM7UUFFRCxJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsVUFBVSxDQUFDLFlBQVksQ0FBQyxFQUFFO1lBQzFDLElBQUksQ0FBQyxVQUFVLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQztTQUNyQztJQUNMLENBQUM7Q0FDSjtBQXRCRCx3Q0FzQkMifQ==","assetPath":"Assets/Script/Object/MoveDownCloud_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"moveSpeed","type":"System.Single","isArray":false,"initValue":["0.5"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"checkBoard","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"upperBoard","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"downBoard","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"MoveDownCloud_control","description":""},"isCompiled":true}'
+  typescriptHash: d28a9cbf5d151b34bcfe1fe374b395fd
+  onlyWriteTrigger: 0

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - upper_board
+  - down_board
   layers:
   - Default
   - TransparentFX

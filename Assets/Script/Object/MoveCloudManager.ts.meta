@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 3fa2240ad726ea348aa700d050966c17
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass MoveCloudManager extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.movingTime
+    = 60;\r\n        this.moveSpeed = 0.5;\r\n        this.moveSpeedRandom = 0;\r\n       
+    this.delta = 0;\r\n        this.directionCloud = true;\r\n    }\r\n    Start()
+    {\r\n        this.moveSpeedRandom = UnityEngine_1.Random.Range(0.1, 1);\r\n   
+    }\r\n    Update() {\r\n        this.delta += UnityEngine_1.Time.deltaTime;\r\n       
+    if (this.delta > this.movingTime) {\r\n            this.delta = 0;\r\n           
+    this.directionCloud = !this.directionCloud;\r\n        }\r\n        var movevalue
+    = UnityEngine_1.Vector3.op_Multiply(UnityEngine_1.Vector3.op_Multiply(UnityEngine_1.Vector3.op_Multiply(UnityEngine_1.Vector3.right,
+    this.moveSpeed), this.moveSpeedRandom), UnityEngine_1.Time.deltaTime);\r\n       
+    if (this.directionCloud) {\r\n            // Move upward during the set moving
+    time\r\n            this.transform.Translate(movevalue);\r\n        }\r\n       
+    else {\r\n            // Move downward during the set moving time\r\n           
+    this.transform.Translate(UnityEngine_1.Vector3.op_Multiply(-1, movevalue));\r\n       
+    }\r\n    }\r\n}\r\nexports.default = MoveCloudManager;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW92ZUNsb3VkTWFuYWdlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk1vdmVDbG91ZE1hbmFnZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQXdFO0FBRXhFLE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUFuRTs7UUFFVyxlQUFVLEdBQVcsRUFBRSxDQUFDO1FBQ3hCLGNBQVMsR0FBVyxHQUFHLENBQUM7UUFDeEIsb0JBQWUsR0FBVyxDQUFDLENBQUM7UUFDM0IsVUFBSyxHQUFXLENBQUMsQ0FBQztRQUNsQixtQkFBYyxHQUFTLElBQUksQ0FBQztJQXVCeEMsQ0FBQztJQXJCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLGVBQWUsR0FBRyxvQkFBTSxDQUFDLEtBQUssQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUM7SUFDaEQsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLENBQUMsS0FBSyxJQUFJLGtCQUFJLENBQUMsU0FBUyxDQUFDO1FBQzdCLElBQUksSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsVUFBVSxFQUFFO1lBQzlCLElBQUksQ0FBQyxLQUFLLEdBQUcsQ0FBQyxDQUFDO1lBQ2YsSUFBSSxDQUFDLGNBQWMsR0FBRyxDQUFDLElBQUksQ0FBQyxjQUFjLENBQUM7U0FDOUM7UUFFRCxJQUFJLFNBQVMsR0FyQloscUJBQU8sQ0ErQnM5cEIsV0FBWSxDQS9CeitwQixxQkFBTyxDQStCczlwQixXQUFZLENBL0J6K3BCLHFCQUFPLENBK0JzOXBCLFdBQVksQ0FWMTlwQixxQkFBTyxDQUFDLEtBQUssRUFBRyxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxlQUFlLEdBQUcsa0JBQUksQ0FBQyxTQUFTLENBQUEsQ0FBQztRQUV2RixJQUFJLElBQUksQ0FBQyxjQUFjLEVBQUU7WUFDckIseUNBQXlDO1lBQ3pDLElBQUksQ0FBQyxTQUFTLENBQUMsU0FBUyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1NBQ3ZDO2FBQU07WUFDSCwyQ0FBMkM7WUFDM0MsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBNUIzQixxQkFBTyxDQStCczlwQixXQUFZLENBSDc4cEIsQ0FBQyxDQUFDLEVBQUcsU0FBUyxFQUFDLENBQUM7U0FDNUM7SUFDTCxDQUFDO0NBQ0o7QUE3QkQsbUNBNkJDIn0=","assetPath":"Assets/Script/Object/MoveCloudManager.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"movingTime","type":"System.Single","isArray":false,"initValue":["60"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"moveSpeed","type":"System.Single","isArray":false,"initValue":["0.5"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"moveSpeedRandom","type":"System.Single","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"MoveCloudManager","description":""},"isCompiled":true}'
+  typescriptHash: db1c4ff51bcf72ca0c56a25f43931e20
+  onlyWriteTrigger: 0

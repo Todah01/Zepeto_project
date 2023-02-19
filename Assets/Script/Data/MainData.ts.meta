@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: d924424e203f3c74dad272b03bd647d0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    MainData extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.CloudCnt = 0;\r\n        this.TotalScore
+    = 0;\r\n    }\r\n}\r\nexports.default = MainData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFpbkRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJNYWluRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBQTNEOztRQUVXLGFBQVEsR0FBUSxDQUFDLENBQUM7UUFDbEIsZUFBVSxHQUFRLENBQUMsQ0FBQztJQUMvQixDQUFDO0NBQUE7QUFKRCwyQkFJQyJ9","assetPath":"Assets/Script/Data/MainData.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"CloudCnt","type":"System.Int32","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"TotalScore","type":"System.Int32","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"MainData","description":""},"isCompiled":true}'
+  typescriptHash: f80d437885d63a1171818b9a4f753a8d
+  onlyWriteTrigger: 0

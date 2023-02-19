@@ -1,6 +1,5 @@
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import { Collider, Collision, Debug, GameObject, LayerMask } from 'UnityEngine';
-import { UnityEvent } from 'UnityEngine.Events';
 import QuizManager from './QuizManager';
 
 export default class Quiz_trigger_control extends ZepetoScriptBehaviour {
@@ -17,12 +16,12 @@ export default class Quiz_trigger_control extends ZepetoScriptBehaviour {
     OnTriggerEnter(coll: Collider) {
         if (coll.gameObject.layer == this.player_layer) {
             console.log("Player In");
-            this.quiz_manager.quiz_start();
+            this.quiz_manager.normal_quiz_start();
         }
     }
 
     OnTriggerExit(coll: Collider) {
         console.log("Player Out");
-        this.quiz_manager.quiz_end();
+        this.quiz_manager.normal_quiz_end();
     }
 }

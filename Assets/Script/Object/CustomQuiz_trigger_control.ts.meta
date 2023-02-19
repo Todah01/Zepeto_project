@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 82db981dec55d0448bcb6471a9ba0c78
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst QuizManager_1 = require(\"./QuizManager\");\r\nclass
+    CustomQuiz_trigger_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        this.quiz_manager = this.QuizManager.GetComponent($typeof(QuizManager_1.default));\r\n   
+    }\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.layer == this.player_layer)
+    {\r\n            console.log(\"Player In\");\r\n            this.quiz_manager.custom_quiz_start();\r\n       
+    }\r\n    }\r\n    OnTriggerExit(coll) {\r\n        console.log(\"Player Out\");\r\n       
+    this.quiz_manager.custom_quiz_end();\r\n    }\r\n}\r\nexports.default = CustomQuiz_trigger_control;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tUXVpel90cmlnZ2VyX2NvbnRyb2wuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDdXN0b21RdWl6X3RyaWdnZXJfY29udHJvbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2Q0FBZ0Y7QUFDaEYsK0NBQXdDO0FBRXhDLE1BQXFCLDBCQUEyQixTQUFRLHFDQUFxQjtJQU96RSxLQUFLO1FBQ0QsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksU0FBQyxxQkFBVyxFQUFHLENBQUM7SUFDckUsQ0FBQztJQUVELGNBQWMsQ0FBQyxJQUFjO1FBQ3pCLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxLQUFLLElBQUksSUFBSSxDQUFDLFlBQVksRUFBRTtZQUM1QyxPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1lBQ3pCLElBQUksQ0FBQyxZQUFZLENBQUMsaUJBQWlCLEVBQUUsQ0FBQztTQUN6QztJQUNMLENBQUM7SUFFRCxhQUFhLENBQUMsSUFBYztRQUN4QixPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDO1FBQzFCLElBQUksQ0FBQyxZQUFZLENBQUMsZUFBZSxFQUFFLENBQUM7SUFDeEMsQ0FBQztDQUNKO0FBdEJELDZDQXNCQyJ9","assetPath":"Assets/Script/Object/CustomQuiz_trigger_control.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"QuizManager","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"player_layer","type":"System.Int32","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CustomQuiz_trigger_control","description":""},"isCompiled":true}'
+  typescriptHash: 0b3621dc71cc2a0afe2004b37308b822
+  onlyWriteTrigger: 0

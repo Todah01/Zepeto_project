@@ -19,11 +19,27 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     public btn_medium: Button;
     public btn_hard: Button;
     public btn_hint: Button;
-    public btn_admin: Button;
+    public btn_host: Button;
     public btn_guest: Button;
+
+    public host_btn_complete: Button;
+    public host_title_input: Text;
+    public host_description_input: Text;
+    public host_answer: Text;
+
+    public guest_btn_complete: Button;
+    public guest_title: Text;
+    public guest_description: Text;
+    public guest_answer: Text;
+
+    public cur_title: string = "";
+    public cur_question: string = "";
+    private cur_answer: string = "";
 
     private cloud_cnt: int = 0;
     private hint_cnt: int = 0;
+    private check_host: bool = false;
+    private guest_cnt: int = 0;
 
     Start() {
         // Normal Quiz UI Event.
@@ -58,7 +74,12 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         });
 
         // Custom Quiz UI Event.
-        this.btn_admin.onClick.AddListener(() => {
+        this.btn_host.onClick.AddListener(() => {
+            if (this.check_host)
+                return;
+
+            this.check_host = false;
+            this.CloudCntData.GetComponent<MainData>().QuizType = "host";
             this.custom_quiz_select_tab.SetActive(false);
             this.custom_quiz_quiz_tab.SetActive(true);
         });
@@ -66,6 +87,11 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         this.btn_guest.onClick.AddListener(() => {
             this.custom_quiz_select_tab.SetActive(false);
             this.custom_quiz_quiz_tab.SetActive(true);
+            
+        });
+
+        this.host_btn_complete.onClick.AddListener(() => {
+            
         });
     }
 

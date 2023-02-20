@@ -1,0 +1,659 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.2604; Version 2009; 64bit' Language: 'ko' Physical Memory: 16313 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Users\wobo5\PersonalProject\2020.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/wobo5/PersonalProject/Zepeto_project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62323
+Successfully changed project path to: C:/Users/wobo5/PersonalProject/Zepeto_project
+C:/Users/wobo5/PersonalProject/Zepeto_project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 114.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/wobo5/PersonalProject/Zepeto_project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   31.0.15.1694
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Initialize mono
+Mono path[0] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Trying to register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
+Platform support module is not available: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003066 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 81.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.237 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.198236 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 88.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2545 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 128 unused Assets to reduce memory usage. Loaded Objects now: 3093.
+Total: 5.882200 ms (FindLiveObjects: 0.342600 ms CreateObjectMapping: 0.075800 ms MarkObjects: 5.272800 ms  DeleteObjects: 0.188900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Stratus_G2.prefab
+  artifactKey: Guid(bcea47ee6f529ae49bd4e17c7203013a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Stratus_G2.prefab using Guid(bcea47ee6f529ae49bd4e17c7203013a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f3af8e1f417cbb34e0782c07333d93') in 0.191152 seconds
+  Import took 0.196553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Swirls_G2.prefab
+  artifactKey: Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Swirls_G2.prefab using Guid(89b3a320a09b72848bd1a24f275e683e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86411a93973055d44e2312c87a1ad3a5') in 0.019693 seconds
+  Import took 0.024976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Strato_G2.prefab
+  artifactKey: Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Strato_G2.prefab using Guid(79f3726e667d7254296b8aef52d0f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6ae66425310af89dbdfa9be16c83e5') in 0.013744 seconds
+  Import took 0.019730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Strato_G1.prefab
+  artifactKey: Guid(9ee1a2ad264aa2040bef16ca093d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Strato_G1.prefab using Guid(9ee1a2ad264aa2040bef16ca093d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30e248c31ab0f9fa00654b2516133f3') in 0.012779 seconds
+  Import took 0.017551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Cumulus_G2.prefab
+  artifactKey: Guid(e5a9e0b66bb8a8b47a28819231a34fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Cumulus_G2.prefab using Guid(e5a9e0b66bb8a8b47a28819231a34fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1a85a391fd4717f85cc318571e0d67') in 0.012981 seconds
+  Import took 0.017980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Swirls_G1.prefab
+  artifactKey: Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Swirls_G1.prefab using Guid(b94cc7cff6b6e2645a5e7c1ce686314b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7bceaeb59923932cd845ec236856fe') in 0.013345 seconds
+  Import took 0.018371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Cumulus_G1.prefab
+  artifactKey: Guid(decc2ba5add7b984aab134a07b436422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Cumulus_G1.prefab using Guid(decc2ba5add7b984aab134a07b436422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de83780bcb44d9a43cb6e77d86668b35') in 0.013389 seconds
+  Import took 0.018418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Stratus_G1.prefab
+  artifactKey: Guid(01bebc0732355504095ed95d90508654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3LE Low Poly Cloud Pack/Prefabs/Clouds_Stratus_G1.prefab using Guid(01bebc0732355504095ed95d90508654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b4093934e24c9485de73cf3ca6965b') in 0.013741 seconds
+  Import took 0.018070 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.055314 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.094 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.8 MB.
+System memory in use after: 136.1 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3103.
+Total: 5.529500 ms (FindLiveObjects: 0.394800 ms CreateObjectMapping: 0.086400 ms MarkObjects: 4.995200 ms  DeleteObjects: 0.051300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.052472 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.9 MB.
+System memory in use after: 136.1 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3106.
+Total: 5.661000 ms (FindLiveObjects: 0.327100 ms CreateObjectMapping: 0.065800 ms MarkObjects: 5.195400 ms  DeleteObjects: 0.071200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053998 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.9 MB.
+System memory in use after: 136.1 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3109.
+Total: 5.267800 ms (FindLiveObjects: 0.303800 ms CreateObjectMapping: 0.069200 ms MarkObjects: 4.851100 ms  DeleteObjects: 0.042200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.051237 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.155 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.9 MB.
+System memory in use after: 136.2 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3112.
+Total: 6.217400 ms (FindLiveObjects: 0.340400 ms CreateObjectMapping: 0.091200 ms MarkObjects: 5.730000 ms  DeleteObjects: 0.054100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053020 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.0 MB.
+System memory in use after: 136.2 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3115.
+Total: 5.661000 ms (FindLiveObjects: 0.288900 ms CreateObjectMapping: 0.073400 ms MarkObjects: 5.231300 ms  DeleteObjects: 0.065900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.052659 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.143 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.0 MB.
+System memory in use after: 136.2 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3118.
+Total: 5.656800 ms (FindLiveObjects: 0.332900 ms CreateObjectMapping: 0.063700 ms MarkObjects: 5.213200 ms  DeleteObjects: 0.045600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.055025 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.0 MB.
+System memory in use after: 136.2 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3121.
+Total: 6.240000 ms (FindLiveObjects: 0.393200 ms CreateObjectMapping: 0.071200 ms MarkObjects: 5.718200 ms  DeleteObjects: 0.055700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053197 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.9 MB.
+System memory in use after: 136.1 MB.
+
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 3124.
+Total: 5.633800 ms (FindLiveObjects: 0.477000 ms CreateObjectMapping: 0.072100 ms MarkObjects: 5.014100 ms  DeleteObjects: 0.068700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

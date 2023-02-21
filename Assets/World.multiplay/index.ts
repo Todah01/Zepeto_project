@@ -1,5 +1,6 @@
 import {Sandbox, SandboxOptions, SandboxPlayer} from "ZEPETO.Multiplay";
-import {Player, sVector3, sQuaternion, SyncTransform, PlayerAdditionalValue, ZepetoAnimationParam} from "ZEPETO.Multiplay.Schema";
+import { Player, sVector3, sQuaternion, SyncTransform, PlayerAdditionalValue, ZepetoAnimationParam } from "ZEPETO.Multiplay.Schema";
+import { DataStorage } from 'ZEPETO.Multiplay.DataStorage';
 
 export default class extends Sandbox {
     private sessionIdQueue: string[] = [];

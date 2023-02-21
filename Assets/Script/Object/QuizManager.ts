@@ -90,9 +90,9 @@ export default class QuizManager extends ZepetoScriptBehaviour {
             
         });
 
-        this.host_btn_complete.onClick.AddListener(() => {
+        //this.host_btn_complete.onClick.AddListener(() => {
             
-        });
+        //});
     }
 
     // Normal quiz trigger event.

@@ -1377,7 +1377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &229414686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5608,6 +5608,13 @@ MonoBehaviour:
     - host_btn_complete
     - cur_title
     - cur_question
+    - host_title_input
+    - host_description_input
+    - host_answer
+    - guest_btn_complete
+    - guest_title
+    - guest_description
+    - guest_answer
     unityValues:
     - {fileID: 841452495}
     - {fileID: 1054207926}
@@ -5625,6 +5632,13 @@ MonoBehaviour:
     - {fileID: 386519672}
     - {fileID: 1554782760}
     - {fileID: 313653208}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -5648,6 +5662,13 @@ MonoBehaviour:
     - 
     - '{"type":"System.String, mscorlib","value":""}'
     - '{"type":"System.String, mscorlib","value":""}'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     unityArrayValues: []
     arrayValues: []
     script: {fileID: 4458252877524076426, guid: 23f72df3eaf9ed0408695351402c7076, type: 3}
@@ -9360,7 +9381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1554782761
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10255,7 +10276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1778331537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15269,7 +15290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1909849968
 RectTransform:
   m_ObjectHideFlags: 0

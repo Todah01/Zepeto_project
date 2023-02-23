@@ -79,7 +79,7 @@ export default class QuizManager extends ZepetoScriptBehaviour {
                 return;
 
             this.check_host = false;
-            this.CloudCntData.GetComponent<MainData>().QuizType = "host";
+            // this.CloudCntData.GetComponent<MainData>().QuizType = "host";
             this.custom_quiz_select_tab.SetActive(false);
             this.custom_quiz_quiz_tab.SetActive(true);
         });

@@ -1,0 +1,53 @@
+fileFormatVersion: 2
+guid: cc271fc51bd621a4d96d966f3e703afa
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst ZEPETO_Script_Leaderboard_1
+    = require(\"ZEPETO.Script.Leaderboard\");\r\nconst RankData_1 = require(\"./RankData\");\r\nclass
+    RankingManager extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.rank_list = [];\r\n    }\r\n   
+    Start() {\r\n        this.btn_ranking.onClick.AddListener(() => {\r\n           
+    this.GetRankData();\r\n            this.ranking_ui.SetActive(true);\r\n       
+    });\r\n    }\r\n    OnResult(result) {\r\n        console.log(`result.isSuccess:
+    ${result.isSuccess}`);\r\n        if (result.rankInfo.myRank) {\r\n           
+    console.log(`member: ${result.rankInfo.myRank.member}, rank: ${result.rankInfo.myRank.rank},
+    \r\n                        score: ${result.rankInfo.myRank.score}, name: ${result.rankInfo.myRank.name}`);\r\n           
+    if (UnityEngine_1.GameObject.op_Inequality(this.myrank_list, null)) {\r\n               
+    let myComponent = this.myrank_list.GetComponent($typeof(RankData_1.default));\r\n               
+    if (myComponent != null) {\r\n                    // Do something with myComponent\r\n                   
+    console.log(\"Clear\");\r\n                }\r\n                else {\r\n                   
+    console.error(\"MyComponent is not attached to myObject!\");\r\n               
+    }\r\n            }\r\n            else {\r\n                console.error(\"myObject
+    is null or undefined!\");\r\n            }\r\n        }\r\n        if (result.rankInfo.rankList)
+    {\r\n            for (let i = 0; i < result.rankInfo.rankList.length; ++i) {\r\n               
+    const rank = result.rankInfo.rankList.get_Item(i);\r\n                console.log(`i:
+    ${i}, member: ${rank.member}, rank: ${rank.rank}, \r\n                           
+    score: ${rank.score}, name: ${result.rankInfo.myRank.name}`);\r\n           
+    }\r\n        }\r\n    }\r\n    OnError(error) {\r\n        console.error(error);\r\n   
+    }\r\n    GetRankData() {\r\n        ZEPETO_Script_Leaderboard_1.LeaderboardAPI.GetRangeRank(this.leaderboardId,
+    this.startRank, this.endRank, this.resetRule, false, this.OnResult, this.OnError);\r\n   
+    }\r\n    SetDataToUI(rankobj, rrank, rname, rscore) {\r\n        rankobj.GetComponent($typeof(RankData_1.default)).rank
+    = rrank;\r\n        rankobj.GetComponent($typeof(RankData_1.default)).userName
+    = rname;\r\n        rankobj.GetComponent($typeof(RankData_1.default)).score =
+    rscore;\r\n        rankobj.GetComponent($typeof(RankData_1.default)).SetInfoText();\r\n   
+    }\r\n}\r\nexports.default = RankingManager;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFua2luZ01hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJSYW5raW5nTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCw2Q0FBeUM7QUFDekMseUVBQTRGO0FBQzVGLHlDQUFrQztBQUVsQyxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0lBQWpFOztRQUU4QixjQUFTLEdBQWlCLEVBQUUsQ0FBQztJQTZEM0QsQ0FBQztJQXBERyxLQUFLO1FBQ0QsSUFBSSxDQUFDLFdBQVcsQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRTtZQUN0QyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7WUFDbkIsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDcEMsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0lBRUQsUUFBUSxDQUFDLE1BQTRCO1FBQ2pDLE9BQU8sQ0FBQyxHQUFHLENBQUMscUJBQXFCLE1BQU0sQ0FBQyxTQUFTLEVBQUUsQ0FBQyxDQUFDO1FBQ3JELElBQUksTUFBTSxDQUFDLFFBQVEsQ0FBQyxNQUFNLEVBQUU7WUFDeEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLE1BQU0sQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLE1BQU0sV0FBVyxNQUFNLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxJQUFJO2lDQUNyRSxNQUFNLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxLQUFLLFdBQVcsTUFBTSxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsSUFBSSxFQUFFLENBQUMsQ0FBQztZQUUzRixJQTVCSCx3QkFBVSxDQW1Fdy9RLGFBQWMsQ0F2Q3pnUixJQUFJLENBQUMsV0FBVyxFQUFJLElBQUksR0FBRTtnQkFDMUIsSUFBSSxXQUFXLEdBQUcsSUFBSSxDQUFDLFdBQVcsQ0FBQyxZQUFZLFNBQUMsa0JBQVEsRUFBRyxDQUFDO2dCQUM1RCxJQUFJLFdBQVcsSUFBSSxJQUFJLEVBQUU7b0JBQ3JCLGdDQUFnQztvQkFDaEMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQztpQkFDeEI7cUJBQ0k7b0JBQ0QsT0FBTyxDQUFDLEtBQUssQ0FBQywwQ0FBMEMsQ0FBQyxDQUFDO2lCQUM3RDthQUNKO2lCQUNJO2dCQUNELE9BQU8sQ0FBQyxLQUFLLENBQUMsZ0NBQWdDLENBQUMsQ0FBQzthQUNuRDtTQUNKO1FBRUQsSUFBSSxNQUFNLENBQUMsUUFBUSxDQUFDLFFBQVEsRUFBRTtZQUMxQixLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxFQUFFO2dCQUN0RCxNQUFNLElBQUksR0FBRyxNQUFNLENBQUMsUUFBUSxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUM7Z0JBQ2xELE9BQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLGFBQWEsSUFBSSxDQUFDLE1BQU0sV0FBVyxJQUFJLENBQUMsSUFBSTtxQ0FDMUMsSUFBSSxDQUFDLEtBQUssV0FBVyxNQUFNLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO2FBQzVFO1NBQ0o7SUFDTCxDQUFDO0lBRUQsT0FBTyxDQUFDLEtBQWE7UUFDakIsT0FBTyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUN6QixDQUFDO0lBRUQsV0FBVztRQUNQLDBDQUFjLENBQUMsWUFBWSxDQUFDLElBQUksQ0FBQyxhQUFhLEVBQUUsSUFBSSxDQUFDLFNBQVMsRUFBRSxJQUFJLENBQUMsT0FBTyxFQUFFLElBQUksQ0FBQyxTQUFTLEVBQUUsS0FBSyxFQUMvRixJQUFJLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUNyQyxDQUFDO0lBRUQsV0FBVyxDQUFDLE9BQWtCLEVBQUUsS0FBYSxFQUFFLEtBQWEsRUFBRSxNQUFjO1FBQ3hFLE9BQU8sQ0FBQyxZQUFZLFNBQUMsa0JBQVEsR0FBSSxJQUFJLEdBQUcsS0FBSyxDQUFDO1FBQzlDLE9BQU8sQ0FBQyxZQUFZLFNBQUMsa0JBQVEsR0FBSSxRQUFRLEdBQUcsS0FBSyxDQUFDO1FBQ2xELE9BQU8sQ0FBQyxZQUFZLFNBQUMsa0JBQVEsR0FBSSxLQUFLLEdBQUcsTUFBTSxDQUFDO1FBQ2hELE9BQU8sQ0FBQyxZQUFZLFNBQUMsa0JBQVEsR0FBSSxXQUFXLEVBQUUsQ0FBQztJQUNuRCxDQUFDO0NBQ0o7QUEvREQsaUNBK0RDIn0=","assetPath":"Assets/Script/Data/RankingManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"rank_list","type":"UnityEngine.GameObject[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.UI","name":"btn_ranking","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"ranking_ui","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"myrank_list","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"leaderboardId","type":"System.String","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"startRank","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"endRank","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"ZEPETO.Script.Leaderboard","name":"resetRule","type":"ZEPETO.Script.Leaderboard.ResetRule","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"RankingManager","description":""},"isCompiled":true}'
+  typescriptHash: d4ca5e38fe3b5ddbfb33923fc2ad9896
+  onlyWriteTrigger: 0

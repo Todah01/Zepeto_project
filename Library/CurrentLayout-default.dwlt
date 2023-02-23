@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: ZEPETO Multiplay
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 43
+  controlID: 17
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 676, y: 492}
   m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 165
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ZepetoMultiplayServerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -173,12 +173,12 @@ MonoBehaviour:
     height: 374
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 20}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,7 +201,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 401, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 17
+  controlID: 73
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_MinSize: {x: 401, y: 221}
   m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 18
+  controlID: 74
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -324,12 +324,12 @@ MonoBehaviour:
     height: 573
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,7 +355,7 @@ MonoBehaviour:
     width: 1250
     height: 353
   m_ViewDataDictionary: {fileID: 0}
-  scrollPosition: {x: 0, y: 0}
+  scrollPosition: {x: 0, y: 121}
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,7 +393,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/ZepetoScripts/MultiplaySync/Sample Code
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -408,7 +409,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e290000
     m_LastClickedID: 10510
-    m_ExpandedIDs: 00000000581d0000b81d0000da1d000094220000aa220000ac22000026270000ee270000042b00001430000022300000cec200008cda000092da000096da0000c4da0000c6da0000d8da000078df00007adf0000fedf00007ee2000082e2000084e2000012e4000052e90000101f0100121f0100141f0100
+    m_ExpandedIDs: 00000000561d0000b61d00001a20000092220000a8220000aa22000024270000ec270000022b00001230000020300000ccc200008ada00008cda000090da000094da0000b4da0000b6da0000c8da000068df00006adf0000eedf00006ee2000072e2000074e2000002e4000042e900003c1f01003e1f0100401f0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -433,21 +434,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 196}
+    scrollPos: {x: 0, y: 365}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000581d0000b81d00001c20000094220000aa220000ac22000026270000ee270000042b00001430000022300000cec200008cda00008eda000092da000096da0000c4da0000c6da0000d8da000078df00007adf0000fedf00007ee2000082e2000084e2000012e4000052e90000101f0100121f0100141f0100
+    m_ExpandedIDs: ffffffff00000000561d0000b61d00001a20000092220000a8220000aa22000024270000ec270000022b00001230000020300000ccc200008ada000090da000094da0000b4da0000b6da0000c2da0000c8da0000e8da000068df00006adf0000eedf00006ee2000072e2000074e2000002e4000042e900003c1f01003e1f0100401f0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: QuizManager
-      m_OriginalName: QuizManager
+      m_Name: CoinAcquire
+      m_OriginalName: CoinAcquire
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 55970
+      m_UserData: 56014
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -524,7 +525,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 38
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -557,23 +558,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: de170100
-      m_LastClickedID: 71646
-      m_ExpandedIDs: 90f2ffff0efbffff1e16010096160100d016010066170100ca1701001c180100201801005e190100241a01007a1a0100d61a0100661d0100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e2a7feff06b1feff08b1feffbcc7feffaac9feffcc60ffff709dffff7e9effff7abfffffd2bfffffa4d5ffffb2d5ffffbed5ffff0efbffffca1501007216010042170100ca1701002a18010050190100fe1a0100ea1d0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: WD_PD_HeartCloud-base
+        m_OriginalName: WD_PD_HeartCloud-base
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -85370
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -619,9 +620,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 22.67029, y: -1.6856862, z: -34.356174}
+    m_Target: {x: 5.2127714, y: -9.1406765, z: 24.84569}
     speed: 2
-    m_Value: {x: 22.67029, y: -1.6856862, z: -34.356174}
+    m_Value: {x: 5.2127714, y: -9.1406765, z: 24.84569}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -668,13 +669,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0065802354, y: 0.9639023, z: -0.0016240064, w: 0.26386246}
+    m_Target: {x: -0.09684896, y: -0.7839037, z: 0.11617262, w: -0.6011544}
     speed: 2
-    m_Value: {x: 0.0065842634, y: 0.9644923, z: -0.0016250005, w: 0.26402396}
+    m_Value: {x: -0.09708296, y: -0.78348416, z: 0.116098784, w: -0.6027011}
   m_Size:
-    m_Target: 21.005638
+    m_Target: 6.7141986
     speed: 2
-    m_Value: 21.005638
+    m_Value: 6.7141986
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -757,7 +758,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

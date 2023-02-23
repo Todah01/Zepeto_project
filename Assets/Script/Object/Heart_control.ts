@@ -10,7 +10,6 @@ export default class Heart_control extends ZepetoScriptBehaviour {
     public player_layer: int;
     public cloud_effect: GameObject;
     public cloud_anim: GameObject;
-    public cloud_cnt_txt: Text;
 
     private particlesystem: ParticleSystem;
 
@@ -18,8 +17,8 @@ export default class Heart_control extends ZepetoScriptBehaviour {
         if (coll.gameObject.layer == this.player_layer) {
             this.gameObject.SetActive(false);
             this.CloudCntData.GetComponent<MainData>().CloudCnt += 1;
-            this.CloudCntData.GetComponent<MainData>().Save();
-            this.cloud_cnt_txt.text = this.CloudCntData.GetComponent<MainData>().CloudCnt.toString();
+            this.CloudCntData.GetComponent<MainData>().TotalScore += 10;
+            this.CloudCntData.GetComponent<MainData>().SetScore();
             this.cloud_effect.SetActive(true);
             Object.Destroy(this.gameObject, 5);
         }

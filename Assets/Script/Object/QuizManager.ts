@@ -108,16 +108,16 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         this.normal_quiz_select_tab.SetActive(true);
     }
 
-    // Custom quiz trigger event.
-    public custom_quiz_start() {
-        this.quiz_ui.SetActive(true);
-        this.custom_quiz_ui.SetActive(true);
-    }
+    //// Custom quiz trigger event.
+    //public custom_quiz_start() {
+    //    this.quiz_ui.SetActive(true);
+    //    this.custom_quiz_ui.SetActive(true);
+    //}
 
-    public custom_quiz_end() {
-        this.quiz_ui.SetActive(false);
-        this.custom_quiz_ui.SetActive(false);
-        this.custom_quiz_quiz_tab.SetActive(false);
-        this.custom_quiz_select_tab.SetActive(true);
-    }
+    //public custom_quiz_end() {
+    //    this.quiz_ui.SetActive(false);
+    //    this.custom_quiz_ui.SetActive(false);
+    //    this.custom_quiz_quiz_tab.SetActive(false);
+    //    this.custom_quiz_select_tab.SetActive(true);
+    //}
 }

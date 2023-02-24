@@ -8,18 +8,38 @@ export default class RankingManager extends ZepetoScriptBehaviour {
 
     @SerializeField() private rank_list: GameObject[] = [];
     public btn_ranking: Button;
+    public btn_exit: Button;
     public ranking_ui: GameObject;
     public myrank_list: GameObject;
     public leaderboardId: string;
     public startRank: number;
     public endRank: number;
+    public bestScore: number;
     public resetRule: ResetRule;
 
+    public userId: string[];
+
     Start() {
+        LeaderboardAPI.GetRank(this.leaderboardId, this.userId, this.resetRule, false,
+            this.OnMyBestRank, this.OnError);
+
         this.btn_ranking.onClick.AddListener(() => {
             this.GetRankData();
             this.ranking_ui.SetActive(true);
         });
+
+        this.btn_exit.onClick.AddListener(() => {
+            this.ranking_ui.SetActive(false);
+        });
+    }
+
+    OnMyBestRank(result: GetRangeRankResponse) {
+        console.log(`result.isSuccess: ${result.isSuccess}`);
+        console.log(`member: ${result.rankInfo.myRank.member}, rank: ${result.rankInfo.myRank.rank}, 
+                        score: ${result.rankInfo.myRank.score}, name: ${result.rankInfo.myRank.name}`);
+
+        this.bestScore = result.rankInfo.myRank.score;
+        console.log(`bestScore: ${this.bestScore}`);
     }
 
     OnResult(result: GetRangeRankResponse) {

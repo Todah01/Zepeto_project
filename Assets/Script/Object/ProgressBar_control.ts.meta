@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: ca9fb8618966308488e4cd33056aea16
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    ProgressBar_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Update()
+    {\r\n        this.GetCurrentFill();\r\n    }\r\n    GetCurrentFill() {\r\n       
+    let currentOffset = this.current - this.minimum;\r\n        let maximumOffset
+    = this.maximum - this.minimum;\r\n        let fillAmount = currentOffset / maximumOffset;\r\n       
+    this.mask.fillAmount = fillAmount;\r\n        this.fill.color = this.color;\r\n   
+    }\r\n}\r\nexports.default = ProgressBar_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvZ3Jlc3NCYXJfY29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlByb2dyZXNzQmFyX2NvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxpREFBcUQ7QUFFckQsTUFBcUIsbUJBQW9CLFNBQVEscUNBQXFCO0lBU2xFLE1BQU07UUFDRixJQUFJLENBQUMsY0FBYyxFQUFFLENBQUM7SUFFMUIsQ0FBQztJQUVELGNBQWM7UUFDVixJQUFJLGFBQWEsR0FBRyxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUM7UUFDaEQsSUFBSSxhQUFhLEdBQUcsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDO1FBQ2hELElBQUksVUFBVSxHQUFHLGFBQWEsR0FBRyxhQUFhLENBQUM7UUFDL0MsSUFBSSxDQUFDLElBQUksQ0FBQyxVQUFVLEdBQUcsVUFBVSxDQUFDO1FBQ2xDLElBQUksQ0FBQyxJQUFJLENBQUMsS0FBSyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUM7SUFDakMsQ0FBQztDQUNKO0FBckJELHNDQXFCQyJ9","assetPath":"Assets/Script/Object/ProgressBar_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"minimum","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"maximum","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"current","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"mask","type":"UnityEngine.UI.Image","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"fill","type":"UnityEngine.UI.Image","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"color","type":"UnityEngine.Color","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ProgressBar_control","description":""},"isCompiled":true}'
+  typescriptHash: cbec80ee58d79e2b0b92f3c98744ea5f
+  onlyWriteTrigger: 0

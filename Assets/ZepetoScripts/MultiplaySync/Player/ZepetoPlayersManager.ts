@@ -146,6 +146,7 @@ export default class ZepetoPlayersManager extends ZepetoScriptBehaviour {
     
     private OnJoinPlayer(sessionId: string, player: Player) {
         console.log(`[OnJoinPlayer] players - sessionId : ${sessionId}`);
+        console.log(`[OnJoinPlayer] players - userId : ${player.zepetoUserId}`);
         this.currentPlayers.set(sessionId, player);
 
         if(this.ZepetoPlayerSpawnType == ZepetoPlayerSpawnType.MultiplayerSpawnOnJoinRoom) {
@@ -153,6 +154,7 @@ export default class ZepetoPlayersManager extends ZepetoScriptBehaviour {
             spawnInfo.position = this.transform.position;
             spawnInfo.rotation = this.transform.rotation;
             const isLocal = this.room.SessionId === player.sessionId;
+            
             ZepetoPlayers.instance.CreatePlayerWithUserId(sessionId, player.zepetoUserId, spawnInfo, isLocal);
         }
     }

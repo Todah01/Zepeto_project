@@ -8,31 +8,33 @@ import { Player } from 'ZEPETO.Multiplay.Schema';
 
 export default class MainData extends ZepetoScriptBehaviour {
 
-    public userId: string;
+    // public userId: string;
     public leaderboardId: string;
-    public CloudCnt: int = 1;
-    public TotalScore: int = 100;
-    public Life: int = 3;
+    public CloudCnt: number;
+    public TotalScore: number;
+    // public Life: number = 3;
     public cloudcnt_txt: Text;
     public totalscore_txt: Text;
     public sampleImage: Image;
 
-    private player: Player;
+    private bestScore: number = 0;
 
     Start() {
         // Set Data
-        LeaderboardAPI.SetScore(this.leaderboardId, this.TotalScore, this.OnResult, this.OnError);
-        // console.log(`userid : ${this.player.zepetoUserId}`);
         this.Load();
         this.SetScore();
 
         // Set life img
-        ZepetoWorldHelper.GetProfileTexture(this.userId, (texture: Texture) => {
-            this.sampleImage.sprite = this.GetSprite(texture);
+        //ZepetoWorldHelper.GetProfileTexture(this.userId, (texture: Texture) => {
+        //    this.sampleImage.sprite = this.GetSprite(texture);
 
-        }, (error) => {
-            console.error(error);
-        });
+        //}, (error) => {
+        //    console.error(error);
+        //});
+    }
+
+    public ResetSetting() {
+        this.TotalScore = 0;
     }
 
     public Save() {
@@ -43,12 +45,24 @@ export default class MainData extends ZepetoScriptBehaviour {
         if (PlayerPrefs.HasKey("CloudCnt")) {
             this.CloudCnt = PlayerPrefs.GetInt("CloudCnt");
         }
+
+        if (PlayerPrefs.HasKey("TotalScore")) {
+            this.bestScore = PlayerPrefs.GetInt("TotalScore");
+        }
+
+        console.log(`bestScore : ${this.bestScore}`);
     }
 
     public SetScore() {
         this.cloudcnt_txt.text = this.CloudCnt.toString();
         this.totalscore_txt.text = this.TotalScore.toString();
         this.Save();
+    }
+
+    public SetScoreToLeaderboard() {
+        // LeaderboardAPI.SetScore(this.leaderboardId, this.TotalScore, this.OnResult, this.OnError);
+        if (this.TotalScore > this.bestScore)
+            PlayerPrefs.SetInt("TotalScore", this.TotalScore);
     }
 
     private GetSprite(texture: Texture) {

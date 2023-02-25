@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 149f375458d0c4a438ecdbeac08de510
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst FallChecking_1 = require(\"../../ZepetoScripts/MultiplaySync/Sample
+    Code/FallChecking\");\r\nconst MainData_1 = require(\"../Data/MainData\");\r\nconst
+    Timer_control_1 = require(\"../Object/Timer_control\");\r\nclass GameManager
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.btn_retry.onClick.AddListener(()
+    => {\r\n            this.gameOn();\r\n        });\r\n        this.btn_exit.onClick.AddListener(()
+    => {\r\n            this.ExitWorld();\r\n        });\r\n    }\r\n    gameOn()
+    {\r\n        this.gameover_ui.SetActive(false);\r\n        this.game_ui.SetActive(true);\r\n       
+    this.MainData.GetComponent($typeof(MainData_1.default)).TotalScore = 0;\r\n       
+    this.Timer.GetComponent($typeof(Timer_control_1.default)).timeValue = 1800;\r\n       
+    this.Timer.GetComponent($typeof(Timer_control_1.default)).timerOn = true;\r\n       
+    this.FallChecking.GetComponent($typeof(FallChecking_1.default)).ResetPosition(this.spawnposition);\r\n       
+    this.gameoverField.SetActive(false);\r\n    }\r\n    gameOff() {\r\n        this.game_ui.SetActive(false);\r\n       
+    this.gameover_ui.SetActive(true);\r\n        this.Timer.GetComponent($typeof(Timer_control_1.default)).timerOn
+    = false;\r\n    }\r\n    ExitWorld() {\r\n    }\r\n}\r\nexports.default = GameManager;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHYW1lTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFrRDtBQUVsRCxpREFBcUQ7QUFDckQsNkZBQXNGO0FBQ3RGLCtDQUF3QztBQUN4QywyREFBb0Q7QUFFcEQsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQVcxRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRTtZQUNwQyxJQUFJLENBQUMsTUFBTSxFQUFFLENBQUM7UUFDbEIsQ0FBQyxDQUFDLENBQUM7UUFDSCxJQUFJLENBQUMsUUFBUSxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQ25DLElBQUksQ0FBQyxTQUFTLEVBQUUsQ0FBQztRQUNyQixDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7SUFFTSxNQUFNO1FBQ1QsSUFBSSxDQUFDLFdBQVcsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbEMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0IsSUFBSSxDQUFDLFFBQVEsQ0FBQyxZQUFZLFNBQUMsa0JBQVEsR0FBSSxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBQ3RELElBQUksQ0FBQyxLQUFLLENBQUMsWUFBWSxTQUFDLHVCQUFhLEdBQUksU0FBUyxHQUFHLElBQUksQ0FBQztRQUMxRCxJQUFJLENBQUMsS0FBSyxDQUFDLFlBQVksU0FBQyx1QkFBYSxHQUFJLE9BQU8sR0FBRyxJQUFJLENBQUM7UUFDeEQsSUFBSSxDQUFDLFlBQVksQ0FBQyxZQUFZLFNBQUMsc0JBQVksR0FBSSxhQUFhLENBQUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQ2pGLElBQUksQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ3hDLENBQUM7SUFFTSxPQUFPO1FBQ1YsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDOUIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDakMsSUFBSSxDQUFDLEtBQUssQ0FBQyxZQUFZLFNBQUMsdUJBQWEsR0FBSSxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQzdELENBQUM7SUFFTyxTQUFTO0lBRWpCLENBQUM7Q0FDSjtBQXZDRCw4QkF1Q0MifQ==","assetPath":"Assets/Script/Character/GameManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"btn_retry","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"btn_exit","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"game_ui","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"gameover_ui","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"MainData","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"Timer","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"gameoverField","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"FallChecking","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"spawnposition","type":"UnityEngine.Vector3","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"GameManager","description":""},"isCompiled":true}'
+  typescriptHash: b563fd4345b64339284344e8cd5a5d4b
+  onlyWriteTrigger: 0

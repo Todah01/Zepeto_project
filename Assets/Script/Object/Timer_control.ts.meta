@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: a591071e9398959448b5a359d4f72376
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Timer_control extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n        super(...arguments);\r\n       
+    this.timerOn = true;\r\n    }\r\n    Update() {\r\n        if (this.timerOn)
+    {\r\n            if (this.timeValue > 0)\r\n                this.timeValue -=
+    UnityEngine_1.Time.deltaTime;\r\n            else\r\n                this.timeValue
+    = 0;\r\n            this.DisplayTime(this.timeValue);\r\n        }\r\n    }\r\n   
+    ResetSetting() {\r\n        this.timeValue = 1800;\r\n        this.timerOn =
+    true;\r\n    }\r\n    DisplayTime(timeToDisplay) {\r\n        if (timeToDisplay
+    < 0)\r\n            timeToDisplay = 0;\r\n        let minutes = UnityEngine_1.Mathf.FloorToInt(timeToDisplay
+    / 60);\r\n        let seconds = UnityEngine_1.Mathf.FloorToInt(timeToDisplay
+    % 60);\r\n        this.timeText.text = minutes.toString() + '':'' + seconds.toString();\r\n   
+    }\r\n}\r\nexports.default = Timer_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXJfY29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRpbWVyX2NvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBMEM7QUFFMUMsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFBaEU7O1FBSVcsWUFBTyxHQUFZLElBQUksQ0FBQztJQTJCbkMsQ0FBQztJQXpCRyxNQUFNO1FBQ0YsSUFBSSxJQUFJLENBQUMsT0FBTyxFQUFFO1lBQ2QsSUFBSSxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUM7Z0JBQ2xCLElBQUksQ0FBQyxTQUFTLElBQUksa0JBQUksQ0FBQyxTQUFTLENBQUM7O2dCQUVqQyxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQztZQUV2QixJQUFJLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztTQUNwQztJQUNMLENBQUM7SUFFTSxZQUFZO1FBQ2YsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUM7UUFDdEIsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7SUFDeEIsQ0FBQztJQUVPLFdBQVcsQ0FBQyxhQUFxQjtRQUNyQyxJQUFJLGFBQWEsR0FBRyxDQUFDO1lBQ2pCLGFBQWEsR0FBRyxDQUFDLENBQUM7UUFFdEIsSUFBSSxPQUFPLEdBQUcsbUJBQUssQ0FBQyxVQUFVLENBQUMsYUFBYSxHQUFHLEVBQUUsQ0FBQyxDQUFDO1FBQ25ELElBQUksT0FBTyxHQUFHLG1CQUFLLENBQUMsVUFBVSxDQUFDLGFBQWEsR0FBRyxFQUFFLENBQUMsQ0FBQztRQUVuRCxJQUFJLENBQUMsUUFBUSxDQUFDLElBQUksR0FBRyxPQUFPLENBQUMsUUFBUSxFQUFFLEdBQUcsR0FBRyxHQUFHLE9BQU8sQ0FBQyxRQUFRLEVBQUUsQ0FBQztJQUN2RSxDQUFDO0NBQ0o7QUEvQkQsZ0NBK0JDIn0=","assetPath":"Assets/Script/Object/Timer_control.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"timeValue","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"timeText","type":"UnityEngine.UI.Text","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"timerOn","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Timer_control","description":""},"isCompiled":true}'
+  typescriptHash: fd2a6d8b2f15874c9ea654e1055d85f4
+  onlyWriteTrigger: 0

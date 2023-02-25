@@ -17,15 +17,15 @@ export default class RankingManager extends ZepetoScriptBehaviour {
     public bestScore: number;
     public resetRule: ResetRule;
 
-    public userId: string[];
+    //public userId: string[];
 
     Start() {
-        LeaderboardAPI.GetRank(this.leaderboardId, this.userId, this.resetRule, false,
-            this.OnMyBestRank, this.OnError);
+        //LeaderboardAPI.GetRank(this.leaderboardId, this.userId, this.resetRule, false,
+        //    this.OnMyBestRank, this.OnError);
 
         this.btn_ranking.onClick.AddListener(() => {
-            this.GetRankData();
-            this.ranking_ui.SetActive(true);
+            //this.GetRankData();
+            //this.ranking_ui.SetActive(true);
         });
 
         this.btn_exit.onClick.AddListener(() => {

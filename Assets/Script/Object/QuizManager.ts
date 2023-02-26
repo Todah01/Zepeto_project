@@ -15,12 +15,16 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     public custom_quiz_ui: GameObject;
     public custom_quiz_select_tab: GameObject;
     public custom_quiz_quiz_tab: GameObject;
+    public exit_ui: GameObject;
     public btn_easy: Button;
     public btn_medium: Button;
     public btn_hard: Button;
     public btn_hint: Button;
     public btn_host: Button;
     public btn_guest: Button;
+    public btn_exit: Button;
+    public btn_yes: Button;
+    public btn_no: Button;
 
     public host_btn_complete: Button;
     public host_title_input: Text;
@@ -42,6 +46,15 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     private guest_cnt: int = 0;
 
     Start() {
+        this.btn_yes.onClick.AddListener(() => {
+            this.normal_quiz_end();
+        });
+        this.btn_no.onClick.AddListener(() => {
+            this.exit_ui.SetActive(false);
+        });
+        this.btn_exit.onClick.AddListener(() => {
+            this.exit_ui.SetActive(true);
+        });
         // Normal Quiz UI Event.
         this.btn_easy.onClick.AddListener(() => {
             this.normal_quiz_select_tab.SetActive(false);

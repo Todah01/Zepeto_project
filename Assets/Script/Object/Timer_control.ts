@@ -6,7 +6,7 @@ export default class Timer_control extends ZepetoScriptBehaviour {
 
     public timeValue: number;
     public timeText: Text;
-    public timerOn: boolean = true;
+    public timerOn: boolean;
 
     Update() {
         if (this.timerOn) {
@@ -31,6 +31,6 @@ export default class Timer_control extends ZepetoScriptBehaviour {
         let minutes = Mathf.FloorToInt(timeToDisplay / 60);
         let seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        this.timeText.text = minutes.toString() + ':' + seconds.toString();
+        this.timeText.text = minutes.toString() + ' : ' + seconds.toString();
     }
 }

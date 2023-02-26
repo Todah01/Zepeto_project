@@ -115,6 +115,7 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     }
 
     public normal_quiz_end() {
+        this.exit_ui.SetActive(false);
         this.quiz_ui.SetActive(false);
         this.normal_quiz_ui.SetActive(false);
         this.normal_quiz_quiz_tab.SetActive(false);

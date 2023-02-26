@@ -10,24 +10,11 @@ import { Image } from 'UnityEngine.UI';
 
 export default class FallChecking extends ZepetoScriptBehaviour {
 
-    @SerializeField() private lifeBox: Image[] = [];
     public MainData: GameObject;
     public GameManager: GameObject;
     public spawnPosition: Vector3;
     public endPosition: Vector3;
-    public life_cnt: number;
-    public lifeOnImg: Sprite;
-    public IifeOffImg: Sprite;
-
-    Start() {
-        this.ResetSetting();
-    }
-
-    private ResetSetting() {
-        this.life_cnt = this.lifeBox.length;
-        for (let idx = 0; idx < this.lifeBox.length; idx++)
-            this.lifeBox[idx].sprite = this.lifeOnImg;
-    }
+    public playerLayer: number;
 
     public ResetPosition(position: Vector3) {
         const localCharacter = ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character;
@@ -35,22 +22,21 @@ export default class FallChecking extends ZepetoScriptBehaviour {
     }
 
     private OnTriggerEnter(coll: Collider) {
-        if(!coll.transform.GetComponent<PlayerSync>()?.isLocal){
+        //if(!coll.transform.GetComponent<PlayerSync>()?.isLocal){
+        //    return;
+        //}
+
+        if (coll.gameObject.layer != this.playerLayer) {
             return;
         }
 
         this.ResetPosition(this.spawnPosition);
 
-        // console.log("life count : " + this.life_cnt);
-        this.life_cnt = Mathf.Max(0, this.life_cnt - 1);
+        this.GameManager.GetComponent<GameManager>().LifeChecking("LifeCheck");
 
-        for (let idx = this.lifeBox.length; idx > this.life_cnt; idx--)
-            this.lifeBox[idx - 1].sprite = this.IifeOffImg;
-
-        if (!this.life_cnt) {
+        if (!this.GameManager.GetComponent<GameManager>().CurrentLifeCnt) {
             this.GameManager.GetComponent<GameManager>().gameOff();
             this.MainData.GetComponent<MainData>().SetScoreToLeaderboard();
-            this.ResetSetting();
             this.GameManager.GetComponent<GameManager>().gameoverField.SetActive(true);
             this.ResetPosition(this.endPosition);
         }

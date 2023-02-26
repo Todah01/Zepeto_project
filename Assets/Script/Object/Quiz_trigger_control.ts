@@ -12,6 +12,7 @@ export default class Quiz_trigger_control extends ZepetoScriptBehaviour {
 
     private quiz_manager: QuizManager;
     private quiz_progressBar: ProgressBar_control;
+    private quiz_check: boolean = true;
 
     Start() {
         this.quiz_manager = this.QuizManager.GetComponent<QuizManager>();
@@ -20,17 +21,16 @@ export default class Quiz_trigger_control extends ZepetoScriptBehaviour {
 
     OnTriggerEnter(coll: Collider) {
         if (coll.gameObject.layer == this.player_layer) {
-            console.log("Player In");
             this.progressBar_quiz.SetActive(true);
         }
     }
 
     OnTriggerStay(coll: Collider) {
         if (coll.gameObject.layer == this.player_layer) {
-            console.log("Player Stay");
-            if (this.quiz_progressBar.current == this.quiz_progressBar.maximum) {
+            if (this.quiz_check && this.quiz_progressBar.current == this.quiz_progressBar.maximum) {
                 this.progressBar_quiz.SetActive(false);
                 this.quiz_manager.normal_quiz_start();
+                this.quiz_check = false;
             }
             else {
                 this.quiz_progressBar.current = Mathf.Min(this.quiz_progressBar.maximum, this.quiz_progressBar.current + this.quiz_gage);
@@ -39,9 +39,9 @@ export default class Quiz_trigger_control extends ZepetoScriptBehaviour {
     }
 
     OnTriggerExit(coll: Collider) {
-        console.log("Player Out");
         this.progressBar_quiz.SetActive(false);
         this.quiz_progressBar.current = 0;
+        this.quiz_check = true;
         this.quiz_manager.normal_quiz_end();
     }
 }

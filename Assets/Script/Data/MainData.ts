@@ -5,25 +5,29 @@ import { SetScoreResponse, LeaderboardAPI } from 'ZEPETO.Script.Leaderboard';
 import { Button, Text, Image } from 'UnityEngine.UI';
 import { Texture, Texture2D, Sprite, Rect, Vector2 } from 'UnityEngine';
 import { Player } from 'ZEPETO.Multiplay.Schema';
+import { List$1 } from 'System.Collections.Generic';
+import Heart_control from '../Object/Heart_control';
+import GameManager from '../Character/GameManager';
 
 export default class MainData extends ZepetoScriptBehaviour {
 
+    @SerializeField() private listCloud: GameObject[] = [];
+    @SerializeField() private listCheck: number[] = [];
     // public userId: string;
     public leaderboardId: string;
     public CloudCnt: number;
-    public TotalScore: number;
+    public bestScore: number;
+    public CurrentScore: number;
+    public GameManager: GameObject;
     // public Life: number = 3;
-    public cloudcnt_txt: Text;
-    public totalscore_txt: Text;
+    public cloudCnt_txt: Text;
+    public currentScore_txt: Text;
     public sampleImage: Image;
-
-    private bestScore: number = 0;
 
     Start() {
         // Set Data
         this.Load();
-        this.SetScore();
-
+        this.SetData();
         // Set life img
         //ZepetoWorldHelper.GetProfileTexture(this.userId, (texture: Texture) => {
         //    this.sampleImage.sprite = this.GetSprite(texture);
@@ -34,11 +38,39 @@ export default class MainData extends ZepetoScriptBehaviour {
     }
 
     public ResetSetting() {
-        this.TotalScore = 0;
+        this.CurrentScore = 0;
+        this.CloudCnt = 0;
+        for (let idx = 0; idx < this.listCloud.length; idx++)
+            this.listCheck[idx] = 0;
+
+        this.SetData();
+        this.Save();
+        this.Load();
     }
 
     public Save() {
+        for (let idx = 0; idx < this.listCloud.length; idx++) {
+            if (this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off) {
+                this.listCheck[idx] = 1;
+            }
+        }
+
+        let strArr = "";
+
+        for (let idx = 0; idx < this.listCheck.length; idx++) {
+            strArr = strArr + this.listCheck[idx].toString();
+            if (idx < this.listCheck.length - 1) {
+                strArr = strArr + ',';
+            }
+        }
+
+        // console.log(strArr);
+
         PlayerPrefs.SetInt("CloudCnt", this.CloudCnt);
+        PlayerPrefs.SetInt("CurrentScore", this.CurrentScore);
+        PlayerPrefs.SetInt("CurrentLifeCnt", this.GameManager.GetComponent<GameManager>().CurrentLifeCnt);
+        // PlayerPrefs.SetInt("BestScore", this.bestScore < this.CurrentScore ? this.CurrentScore : this.bestScore);
+        PlayerPrefs.SetString("listCloudCheck", strArr);
     }
 
     public Load() {
@@ -46,23 +78,46 @@ export default class MainData extends ZepetoScriptBehaviour {
             this.CloudCnt = PlayerPrefs.GetInt("CloudCnt");
         }
 
-        if (PlayerPrefs.HasKey("TotalScore")) {
-            this.bestScore = PlayerPrefs.GetInt("TotalScore");
+        if (PlayerPrefs.HasKey("CurrentScore")) {
+            this.CurrentScore = PlayerPrefs.GetInt("CurrentScore");
         }
 
-        console.log(`bestScore : ${this.bestScore}`);
+        if (PlayerPrefs.HasKey("CurrentLifeCnt")) {
+            this.GameManager.GetComponent<GameManager>().CurrentLifeCnt = PlayerPrefs.GetInt("CurrentLifeCnt");
+        }
+
+        if (PlayerPrefs.HasKey("BestScore")) {
+            this.bestScore = PlayerPrefs.GetInt("BestScore");
+        }
+
+        if (PlayerPrefs.HasKey("listCloudCheck")) {
+            let dataArr = PlayerPrefs.GetString("listCloudCheck").split(',');
+
+            for (let idx = 0; idx < dataArr.length; idx++) {
+                this.listCheck[idx] = parseInt(dataArr[idx]);
+            }
+        }
+
+        for (let idx = 0; idx < this.listCloud.length; idx++) {
+            if (this.listCheck[idx]) {
+                this.listCloud[idx].transform.GetChild(0).gameObject.SetActive(false);
+            }
+            else {
+                this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off = 0;
+                this.listCloud[idx].transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
     }
 
-    public SetScore() {
-        this.cloudcnt_txt.text = this.CloudCnt.toString();
-        this.totalscore_txt.text = this.TotalScore.toString();
-        this.Save();
+    public SetData() {
+        this.cloudCnt_txt.text = this.CloudCnt.toString();
+        this.currentScore_txt.text = this.CurrentScore.toString();
+        this.GameManager.GetComponent<GameManager>().LifeChecking("SetData");
     }
 
     public SetScoreToLeaderboard() {
         // LeaderboardAPI.SetScore(this.leaderboardId, this.TotalScore, this.OnResult, this.OnError);
-        if (this.TotalScore > this.bestScore)
-            PlayerPrefs.SetInt("TotalScore", this.TotalScore);
+        PlayerPrefs.SetInt("BestScore", this.bestScore < this.CurrentScore ? this.CurrentScore : this.bestScore);
     }
 
     private GetSprite(texture: Texture) {

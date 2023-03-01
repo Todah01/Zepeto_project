@@ -47,9 +47,60 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\PlaylistControllerInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AudioScriptOrderManager.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\DynamicSoundGroupCreatorInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\SoundGroupOrganizerInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\SocialNetworkExample\SocialNetworkBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AudioTransformTrackerInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioHierIcon.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\DynamicSoundGroupInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\RelationsInspectorLink.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AudioUndoHelper.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\BulkAudioImporter.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\SocialNetworkExample\Person.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\HierarchyExample\SceneHierarchyBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\AutoBackend\ReflectionUtil.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\TypeGraphExample\TypeInheritanceBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\PersistChanges\MAComponentPatch.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterCustomEventPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\SoundGroupPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioGroupInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AmbientSoundInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\DrawUtil.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\PlaylistPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\DynamicGroupVariationInspector.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\DTDefineHelper.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\BackendUtil.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\HierarchyExample\TagBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AudioEventInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\FootstepsSoundsInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\DTGUIHelper.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenPreviewManager.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\AddressableEditorHelper.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\MasterAudioEventBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\RelationsInspectorMenuItem.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\SocialNetworkExample\StudyNetworkBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioWelcomeWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\AutoBackend\RIAutoBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\ButtonClickerInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\PersistChanges\MAObjectContext.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\MinimalBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\PersistChanges\MAGOSetting.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\ScriptableObjectBackendToolbar.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioManager.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\Backends\TypeGraphExample\TypeUtility.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioInspectorResources.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\ColorLegendWidget.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\MasterAudioSoundUpgrader.cs" />
+     <Compile Include="Assets\Plugins\Editor\DarkTonic\MasterAudio\SoundGroupVariationInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\ScriptableObjectBackend.cs" />
+     <Compile Include="Assets\Plugins\Editor\RelationsInspector\BackendUtils\RandomColor.cs" />
      <None Include="Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
+     <None Include="Assets\Plugins\Editor\RelationsInspector\README.txt" />
+     <None Include="Assets\Plugins\Editor\RelationsInspector\changelog.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -460,6 +511,9 @@
  </Reference>
  <Reference Include="ZEPETO.Multiplay.Generated">
  <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Library/PackageCache/zepeto.multiplay.script@1.6.0/plugins/ZEPETO.Multiplay.Generated.dll</HintPath>
+ </Reference>
+ <Reference Include="RelationsInspector">
+ <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Assets/Plugins/Editor/RelationsInspector/RelationsInspector.dll</HintPath>
  </Reference>
  <Reference Include="ZEPETO.World.Common">
  <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Library/PackageCache/zepeto.world.common@1.0.1/plugins/ZEPETO.World.Common.dll</HintPath>

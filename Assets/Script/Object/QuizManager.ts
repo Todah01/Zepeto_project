@@ -1,7 +1,8 @@
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import { Button } from 'UnityEngine.UI';
-import { GameObject } from 'UnityEngine';
+import { AudioClip, GameObject } from 'UnityEngine';
 import MainData from '../Data/MainData';
+import AudioManager from '../Character/AudioManager';
 
 export default class QuizManager extends ZepetoScriptBehaviour {
 
@@ -45,33 +46,42 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     private check_host: bool = false;
     private guest_cnt: int = 0;
 
+    public clip: AudioClip;
+
     Start() {
         this.btn_yes.onClick.AddListener(() => {
             this.normal_quiz_end();
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
         });
         this.btn_no.onClick.AddListener(() => {
             this.exit_ui.SetActive(false);
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
         });
         this.btn_exit.onClick.AddListener(() => {
             this.exit_ui.SetActive(true);
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
         });
         // Normal Quiz UI Event.
         this.btn_easy.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_medium.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_hard.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_hint.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.cloud_cnt = this.CloudCntData.GetComponent<MainData>().CloudCnt;
 
             if (this.hint_cnt < 2 && this.cloud_cnt > 0) {

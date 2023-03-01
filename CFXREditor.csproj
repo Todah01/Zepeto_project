@@ -463,6 +463,9 @@
  <Reference Include="ZEPETO.Multiplay.Generated">
  <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Library/PackageCache/zepeto.multiplay.script@1.6.0/plugins/ZEPETO.Multiplay.Generated.dll</HintPath>
  </Reference>
+ <Reference Include="RelationsInspector">
+ <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Assets/Plugins/Editor/RelationsInspector/RelationsInspector.dll</HintPath>
+ </Reference>
  <Reference Include="ZEPETO.World.Common">
  <HintPath>C:/Users/wobo5/PersonalProject/Zepeto_project/Library/PackageCache/zepeto.world.common@1.0.1/plugins/ZEPETO.World.Common.dll</HintPath>
  </Reference>

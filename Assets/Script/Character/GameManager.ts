@@ -1,9 +1,10 @@
-import { GameObject, Vector3, Mathf, Sprite } from 'UnityEngine';
+import { GameObject, Vector3, Mathf, Sprite, AudioClip } from 'UnityEngine';
 import { Button, Image } from 'UnityEngine.UI'
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import FallChecking from '../../ZepetoScripts/MultiplaySync/Sample Code/FallChecking';
 import MainData from '../Data/MainData';
 import Timer_control from '../Object/Timer_control';
+import AudioManager from './AudioManager';
 
 export default class GameManager extends ZepetoScriptBehaviour {
 
@@ -25,29 +26,36 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public lifeOnImg: Sprite;
     public IifeOffImg: Sprite;
     public CurrentLifeCnt: number;
+    public clip: AudioClip;
 
     private optionUICheck: boolean = false;
 
     Start() {
         this.btn_retry.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.gameOn();
         });
         this.btn_exit.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.ExitWorld();
         });
         this.btn_option.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             if (this.optionUICheck)
                 this.optionOff();
             else
                 this.optionOn();
         });
         this.opbtn_sound.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.bgsoundOff();
         }); 
         this.opbtn_friends.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             
         });
         this.opbtn_exit.onClick.AddListener(() => {
+            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
             this.ExitWorld();
         });
     }

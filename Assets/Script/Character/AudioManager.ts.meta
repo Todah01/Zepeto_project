@@ -1,0 +1,43 @@
+fileFormatVersion: 2
+guid: 9ab6c225258c4c945a1511e64333c1df
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass AudioManager extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        this.BgSoundPlay(this.bglist[0]);\r\n    }\r\n   
+    static GetInstance() {\r\n        if (!AudioManager.Instance) {\r\n           
+    var _obj = new UnityEngine_1.GameObject(\"CustomSingleton\");\r\n           
+    UnityEngine_1.GameObject.DontDestroyOnLoad(_obj);\r\n            AudioManager.Instance
+    = _obj.AddComponent($typeof(AudioManager));\r\n        }\r\n        return AudioManager.Instance;\r\n   
+    }\r\n    OnSceneLoaded(arg0, arg1) {\r\n        for (let idx = 0; idx < this.bglist.length;
+    idx++) {\r\n            if (arg0.name == this.bglist[idx].name) {\r\n               
+    this.BgSoundPlay(this.bglist[idx]);\r\n            }\r\n        }\r\n    }\r\n   
+    SFXPlay(sfxName, clip) {\r\n        let go = new UnityEngine_1.GameObject(sfxName
+    + \"Sound\");\r\n        let audioSource = go.AddComponent($typeof(UnityEngine_1.AudioSource));\r\n       
+    audioSource.outputAudioMixerGroup = this.mixer.FindMatchingGroups(\"SFX\")[0];\r\n       
+    audioSource.clip = clip;\r\n        audioSource.Play();\r\n        UnityEngine_1.Object.Destroy(go,
+    clip.length);\r\n    }\r\n    BgSoundPlay(clip) {\r\n        this.bgSound.outputAudioMixerGroup
+    = this.mixer.FindMatchingGroups(\"BGSound\")[0];\r\n        this.bgSound.clip
+    = clip;\r\n        this.bgSound.loop = true;\r\n        this.bgSound.volume =
+    0.3;\r\n        this.bgSound.Play();\r\n    }\r\n    BGSoundVolume(val) {\r\n       
+    this.mixer.SetFloat(\"BGSoundVolume\", UnityEngine_1.Mathf.Log10(val) * 20);\r\n   
+    }\r\n}\r\nexports.default = AudioManager;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXVkaW9NYW5hZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQXVkaW9NYW5hZ2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQStFO0FBRy9FLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBUTNELEtBQUs7UUFDRCxJQUFJLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztJQUNyQyxDQUFDO0lBRU0sTUFBTSxDQUFDLFdBQVc7UUFDckIsSUFBSSxDQUFDLFlBQVksQ0FBQyxRQUFRLEVBQUU7WUFDeEIsSUFBSSxJQUFJLEdBQUcsSUFBSSx3QkFBVSxDQUFDLGlCQUFpQixDQUFDLENBQUM7WUFDN0Msd0JBQVUsQ0FBQyxpQkFBaUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUNuQyxZQUFZLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsWUFBWSxFQUFHLENBQUM7U0FDN0Q7UUFDRCxPQUFPLFlBQVksQ0FBQyxRQUFRLENBQUM7SUFDakMsQ0FBQztJQUVPLGFBQWEsQ0FBQyxJQUFXLEVBQUUsSUFBbUI7UUFDbEQsS0FBSyxJQUFJLEdBQUcsR0FBRyxDQUFDLEVBQUUsR0FBRyxHQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsTUFBTSxFQUFFLEdBQUcsRUFBRSxFQUFFO1lBQy9DLElBQUksSUFBSSxDQUFDLElBQUksSUFBSSxJQUFJLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDLElBQUksRUFBRTtnQkFDcEMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7YUFDdEM7U0FDSjtJQUNMLENBQUM7SUFFTSxPQUFPLENBQUMsT0FBZSxFQUFFLElBQWU7UUFDM0MsSUFBSSxFQUFFLEdBQUcsSUFBSSx3QkFBVSxDQUFDLE9BQU8sR0FBRyxPQUFPLENBQUMsQ0FBQztRQUMzQyxJQUFJLFdBQVcsR0FBRyxFQUFFLENBQUMsWUFBWSxTQUFDLHlCQUFXLEVBQUcsQ0FBQztRQUNqRCxXQUFXLENBQUMscUJBQXFCLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUM1RSxXQUFXLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQztRQUN4QixXQUFXLENBQUMsSUFBSSxFQUFFLENBQUM7UUFFbkIsb0JBQU0sQ0FBQyxPQUFPLENBQUMsRUFBRSxFQUFFLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUNwQyxDQUFDO0lBRU0sV0FBVyxDQUFDLElBQWU7UUFDOUIsSUFBSSxDQUFDLE9BQU8sQ0FBQyxxQkFBcUIsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLGtCQUFrQixDQUFDLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ2pGLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQztRQUN6QixJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSxDQUFDLE9BQU8sQ0FBQyxNQUFNLEdBQUcsR0FBRyxDQUFDO1FBQzFCLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDeEIsQ0FBQztJQUVNLGFBQWEsQ0FBQyxHQUFXO1FBQzVCLElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxDQUFDLGVBQWUsRUFBRSxtQkFBSyxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUMsQ0FBQztJQUNoRSxDQUFDO0NBQ0o7QUFsREQsK0JBa0RDIn0=","assetPath":"Assets/Script/Character/AudioManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.AudioModule","name":"mixer","type":"UnityEngine.Audio.AudioMixer","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.AudioModule","name":"bgSound","type":"UnityEngine.AudioSource","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.AudioModule","name":"bglist","type":"UnityEngine.AudioClip[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"AudioManager","description":""},"isCompiled":true}'
+  typescriptHash: ab84a17f174a99e46c3e5b969f13c713
+  onlyWriteTrigger: 0

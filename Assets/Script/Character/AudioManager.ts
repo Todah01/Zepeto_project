@@ -25,29 +25,36 @@ export default class AudioManager extends ZepetoScriptBehaviour {
     }
 
     private OnSceneLoaded(arg0: Scene, arg1: LoadSceneMode) {
-        for (let idx = 0; idx < this.bglist.length; idx++) {
-            if (arg0.name == this.bglist[idx].name) {
-                this.BgSoundPlay(this.bglist[idx]);
-            }
-        }
+        this.BgSoundPlay(this.bglist[0]);
+        //for (let idx = 0; idx < this.bglist.length; idx++) {
+        //    if (arg0.name == this.bglist[idx].name) {
+        //        this.BgSoundPlay(this.bglist[idx]);
+        //    }
+        //}
     }
 
     public SFXPlay(sfxName: string, clip: AudioClip) {
         let go = new GameObject(sfxName + "Sound");
         let audioSource = go.AddComponent<AudioSource>();
-        audioSource.outputAudioMixerGroup = this.mixer.FindMatchingGroups("SFX")[0];
+        // audioSource.outputAudioMixerGroup = this.mixer.FindMatchingGroups("SFX")[0];
         audioSource.clip = clip;
+        audioSource.volume = 0.3;
         audioSource.Play();
 
         Object.Destroy(go, clip.length);
     }
 
     public BgSoundPlay(clip: AudioClip) {
-        this.bgSound.outputAudioMixerGroup = this.mixer.FindMatchingGroups("BGSound")[0];
+        // this.bgSound.outputAudioMixerGroup = this.mixer.FindMatchingGroups("BGSound")[0];
         this.bgSound.clip = clip;
         this.bgSound.loop = true;
+        
         this.bgSound.volume = 0.3;
         this.bgSound.Play();
+    }
+
+    public BgSoundStop() {
+        this.bgSound.Stop();
     }
 
     public BGSoundVolume(val: number) {

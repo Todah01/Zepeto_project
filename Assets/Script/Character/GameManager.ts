@@ -61,6 +61,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOn() {
+        AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[0]);
         this.ResetSetting();
         this.gameover_ui.SetActive(false);
         this.game_ui.SetActive(true);
@@ -71,6 +72,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOff() {
+        AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[1]);
         this.game_ui.SetActive(false);
         this.gameover_ui.SetActive(true);
         this.Timer.GetComponent<Timer_control>().timerOn = false;
@@ -93,7 +95,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     private bgsoundOff() {
-
+        AudioManager.GetInstance().BgSoundStop();
     }
 
     private optionOn() {

@@ -85,6 +85,14 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public LifeChecking(command: string) {
+        if (command == "SetData") {
+            if (this.CurrentLifeCnt == 0) {
+                this.MainData.GetComponent<MainData>().ResetSetting();
+                this.Timer.GetComponent<Timer_control>().ResetSetting();
+                this.ResetSetting();
+            }
+        }
+
         if (command == "LifeCheck") {
             this.CurrentLifeCnt = Mathf.Max(0, this.CurrentLifeCnt - 1);
             this.MainData.GetComponent<MainData>().Save();

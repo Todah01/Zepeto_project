@@ -61,7 +61,8 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOn() {
-        AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[0]);
+        // AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[0]);
+        console.log("bgm : " + AudioManager.GetInstance().bglist[0].name);
         this.ResetSetting();
         this.gameover_ui.SetActive(false);
         this.game_ui.SetActive(true);
@@ -72,7 +73,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOff() {
-        AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[1]);
+        console.log("bgm : " + AudioManager.GetInstance().bglist[1].name);
         this.game_ui.SetActive(false);
         this.gameover_ui.SetActive(true);
         this.Timer.GetComponent<Timer_control>().timerOn = false;
@@ -85,14 +86,6 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public LifeChecking(command: string) {
-        if (command == "SetData") {
-            if (this.CurrentLifeCnt == 0) {
-                this.MainData.GetComponent<MainData>().ResetSetting();
-                this.Timer.GetComponent<Timer_control>().ResetSetting();
-                this.ResetSetting();
-            }
-        }
-
         if (command == "LifeCheck") {
             this.CurrentLifeCnt = Mathf.Max(0, this.CurrentLifeCnt - 1);
             this.MainData.GetComponent<MainData>().Save();

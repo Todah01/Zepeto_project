@@ -13,9 +13,23 @@ sandboxWorldId : 'com.company.todah.personal'
 sandboxWorldVersion : '0.1'
 sandboxMaxClients : 8
 sandboxPackageVersion : '1.1.13'
-gatewayPort : 60076
+gatewayPort : 64209
 host : '172.30.1.55'
 ===================================================
 Source File :  C:\Users\wobo5\PersonalProject\Zepeto_project\Assets\World.multiplay\index.ts
-[info] 2023-03-03T08:39:24.807Z gameserver 172.30.1.55:0 listen
+[info] 2023-03-04T06:37:52.422Z gameserver 172.30.1.55:0 listen
+[info] 2023-03-04T06:38:09.883Z gameserver multiplay room application created.
+join player, USER_jBNf7gcSNZv
+[info] 2023-03-04T06:38:10.424Z gameserver session [USER_jBNf7gcSNZv] in room [ROOM_hlqzjIu7-] joined.
+master->, USER_jBNf7gcSNZv
+leave player, USER_jBNf7gcSNZv
+master->, undefined
+[info] 2023-03-04T06:47:27.412Z gameserver session [USER_jBNf7gcSNZv] in room [ROOM_hlqzjIu7-] leaved.
+[info] 2023-03-04T06:47:33.298Z gameserver multiplay room application created.
+join player, USER_OJtYtjghUsJ
+[info] 2023-03-04T06:47:33.442Z gameserver session [USER_OJtYtjghUsJ] in room [ROOM_CwBKuUsU4] joined.
+master->, USER_OJtYtjghUsJ
+leave player, USER_OJtYtjghUsJ
+master->, undefined
+[info] 2023-03-04T06:48:21.344Z gameserver session [USER_OJtYtjghUsJ] in room [ROOM_CwBKuUsU4] leaved.
 no activity in the process and it terminate

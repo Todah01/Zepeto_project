@@ -74,28 +74,35 @@ export default class MainData extends ZepetoScriptBehaviour {
     }
 
     public Load() {
-        if (PlayerPrefs.HasKey("CloudCnt")) {
-            this.CloudCnt = PlayerPrefs.GetInt("CloudCnt");
-        }
-
-        if (PlayerPrefs.HasKey("CurrentScore")) {
-            this.CurrentScore = PlayerPrefs.GetInt("CurrentScore");
-        }
-
         if (PlayerPrefs.HasKey("CurrentLifeCnt")) {
-            this.GameManager.GetComponent<GameManager>().CurrentLifeCnt = PlayerPrefs.GetInt("CurrentLifeCnt");
+            if (PlayerPrefs.GetInt("CurrentLifeCnt") == 0) {
+                this.GameManager.GetComponent<GameManager>().CurrentLifeCnt = 3;
+                this.CloudCnt = 0;
+                this.CurrentScore = 0;
+            }
+            else {
+                this.GameManager.GetComponent<GameManager>().CurrentLifeCnt = PlayerPrefs.GetInt("CurrentLifeCnt");
+
+                if (PlayerPrefs.HasKey("CloudCnt")) {
+                    this.CloudCnt = PlayerPrefs.GetInt("CloudCnt");
+                }
+
+                if (PlayerPrefs.HasKey("CurrentScore")) {
+                    this.CurrentScore = PlayerPrefs.GetInt("CurrentScore");
+                }
+
+                if (PlayerPrefs.HasKey("listCloudCheck")) {
+                    let dataArr = PlayerPrefs.GetString("listCloudCheck").split(',');
+
+                    for (let idx = 0; idx < dataArr.length; idx++) {
+                        this.listCheck[idx] = parseInt(dataArr[idx]);
+                    }
+                }
+            }
         }
 
         if (PlayerPrefs.HasKey("BestScore")) {
             this.bestScore = PlayerPrefs.GetInt("BestScore");
-        }
-
-        if (PlayerPrefs.HasKey("listCloudCheck")) {
-            let dataArr = PlayerPrefs.GetString("listCloudCheck").split(',');
-
-            for (let idx = 0; idx < dataArr.length; idx++) {
-                this.listCheck[idx] = parseInt(dataArr[idx]);
-            }
         }
 
         for (let idx = 0; idx < this.listCloud.length; idx++) {

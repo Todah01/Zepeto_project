@@ -61,8 +61,8 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOn() {
-        // AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().bglist[0]);
-        console.log("bgm : " + AudioManager.GetInstance().bglist[0].name);
+        // AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().baseBg);
+        // console.log("bgm : " + AudioManager.GetInstance().baseBg.name);
         this.ResetSetting();
         this.gameover_ui.SetActive(false);
         this.game_ui.SetActive(true);
@@ -73,7 +73,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOff() {
-        console.log("bgm : " + AudioManager.GetInstance().bglist[1].name);
+        // console.log("bgm : " + AudioManager.GetInstance().endBg.name);
         this.game_ui.SetActive(false);
         this.gameover_ui.SetActive(true);
         this.Timer.GetComponent<Timer_control>().timerOn = false;

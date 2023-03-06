@@ -6,13 +6,15 @@ import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 export default class AudioManager extends ZepetoScriptBehaviour {
 
     public mixer: AudioMixer;
-    public bgSound: AudioSource;
-    public bglist: AudioClip[];
+    @SerializeField() public bgSound: AudioSource;
+    public baseBg: AudioClip;
+    public endBg: AudioClip;
 
     private static Instance: AudioManager;
 
     Awake() {
-        this.BgSoundPlay(this.bglist[0]);
+        this.BgSoundPlay(this.baseBg);
+        console.log("bgm : " + this.baseBg.name);
     }
 
     public static GetInstance(): AudioManager {
@@ -25,7 +27,7 @@ export default class AudioManager extends ZepetoScriptBehaviour {
     }
 
     private OnSceneLoaded(arg0: Scene, arg1: LoadSceneMode) {
-        this.BgSoundPlay(this.bglist[0]);
+        this.BgSoundPlay(this.baseBg);
         //for (let idx = 0; idx < this.bglist.length; idx++) {
         //    if (arg0.name == this.bglist[idx].name) {
         //        this.BgSoundPlay(this.bglist[idx]);
@@ -48,7 +50,6 @@ export default class AudioManager extends ZepetoScriptBehaviour {
         // this.bgSound.outputAudioMixerGroup = this.mixer.FindMatchingGroups("BGSound")[0];
         this.bgSound.clip = clip;
         this.bgSound.loop = true;
-        
         this.bgSound.volume = 0.3;
         this.bgSound.Play();
     }

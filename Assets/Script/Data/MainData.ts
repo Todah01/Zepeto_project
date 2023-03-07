@@ -40,8 +40,12 @@ export default class MainData extends ZepetoScriptBehaviour {
     public ResetSetting() {
         this.CurrentScore = 0;
         this.CloudCnt = 0;
-        for (let idx = 0; idx < this.listCloud.length; idx++)
+        for (let idx = 0; idx < this.listCloud.length; idx++) {
+            if (this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off) {
+                this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off = 0;
+            }
             this.listCheck[idx] = 0;
+        }
 
         this.SetData();
         this.Save();
@@ -90,14 +94,14 @@ export default class MainData extends ZepetoScriptBehaviour {
                 if (PlayerPrefs.HasKey("CurrentScore")) {
                     this.CurrentScore = PlayerPrefs.GetInt("CurrentScore");
                 }
+            }
+        }
 
-                if (PlayerPrefs.HasKey("listCloudCheck")) {
-                    let dataArr = PlayerPrefs.GetString("listCloudCheck").split(',');
+        if (PlayerPrefs.HasKey("listCloudCheck")) {
+            let dataArr = PlayerPrefs.GetString("listCloudCheck").split(',');
 
-                    for (let idx = 0; idx < dataArr.length; idx++) {
-                        this.listCheck[idx] = parseInt(dataArr[idx]);
-                    }
-                }
+            for (let idx = 0; idx < dataArr.length; idx++) {
+                this.listCheck[idx] = parseInt(dataArr[idx]);
             }
         }
 

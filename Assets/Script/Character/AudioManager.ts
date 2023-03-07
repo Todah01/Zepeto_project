@@ -6,24 +6,27 @@ import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 export default class AudioManager extends ZepetoScriptBehaviour {
 
     public mixer: AudioMixer;
-    @SerializeField() public bgSound: AudioSource;
+    public bgSound: AudioSource;
     public baseBg: AudioClip;
     public endBg: AudioClip;
 
-    private static Instance: AudioManager;
+    private static audio_Instance: AudioManager;
 
-    Awake() {
-        this.BgSoundPlay(this.baseBg);
-        console.log("bgm : " + this.baseBg.name);
+    public static get instance(): AudioManager {
+        if (this.audio_Instance == null) {
+            this.audio_Instance = new GameObject("AudioManager").AddComponent<AudioManager>();
+        }
+        return this.audio_Instance;
     }
 
-    public static GetInstance(): AudioManager {
-        if (!AudioManager.Instance) {
-            var _obj = new GameObject("CustomSingleton");
-            GameObject.DontDestroyOnLoad(_obj);
-            AudioManager.Instance = _obj.AddComponent<AudioManager>();
+    Awake() {
+        if (AudioManager.audio_Instance == null) {
+            AudioManager.audio_Instance = this;
+            GameObject.DontDestroyOnLoad(AudioManager.audio_Instance);
+            this.BgSoundPlay(this.baseBg);
+        } else {
+            GameObject.Destroy(AudioManager.audio_Instance);
         }
-        return AudioManager.Instance;
     }
 
     private OnSceneLoaded(arg0: Scene, arg1: LoadSceneMode) {
@@ -50,8 +53,16 @@ export default class AudioManager extends ZepetoScriptBehaviour {
         // this.bgSound.outputAudioMixerGroup = this.mixer.FindMatchingGroups("BGSound")[0];
         this.bgSound.clip = clip;
         this.bgSound.loop = true;
-        this.bgSound.volume = 0.3;
+        this.bgSound.volume = 0.2;
         this.bgSound.Play();
+    }
+
+    public BgSoundReplay() {
+        this.bgSound.Play();
+    }
+
+    public BgSoundPause() {
+        this.bgSound.Pause();
     }
 
     public BgSoundStop() {

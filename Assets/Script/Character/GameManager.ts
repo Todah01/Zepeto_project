@@ -26,43 +26,49 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public lifeOnImg: Sprite;
     public IifeOffImg: Sprite;
     public CurrentLifeCnt: number;
-    public clip: AudioClip;
+    public btnTouchClip: AudioClip;
 
     private optionUICheck: boolean = false;
+    private optionbgmOff: boolean = false;
 
     Start() {
         this.btn_retry.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             this.gameOn();
         });
         this.btn_exit.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             this.ExitWorld();
         });
         this.btn_option.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             if (this.optionUICheck)
                 this.optionOff();
             else
                 this.optionOn();
         });
         this.opbtn_sound.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
-            this.bgsoundOff();
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
+            if (this.optionbgmOff) {
+                AudioManager.instance.BgSoundReplay();
+                this.optionbgmOff = false;
+            }
+            else {
+                AudioManager.instance.BgSoundPause();
+                this.optionbgmOff = true;
+            }  
         }); 
         this.opbtn_friends.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             
         });
         this.opbtn_exit.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             this.ExitWorld();
         });
     }
 
     public gameOn() {
-        // AudioManager.GetInstance().BgSoundPlay(AudioManager.GetInstance().baseBg);
-        // console.log("bgm : " + AudioManager.GetInstance().baseBg.name);
         this.ResetSetting();
         this.gameover_ui.SetActive(false);
         this.game_ui.SetActive(true);
@@ -70,10 +76,13 @@ export default class GameManager extends ZepetoScriptBehaviour {
         this.MainData.GetComponent<MainData>().ResetSetting();
         this.FallChecking.GetComponent<FallChecking>().ResetPosition(this.spawnposition);
         this.gameoverField.SetActive(false);
+        AudioManager.instance.BgSoundStop();
+        AudioManager.instance.BgSoundPlay(AudioManager.instance.baseBg);
     }
 
     public gameOff() {
-        // console.log("bgm : " + AudioManager.GetInstance().endBg.name);
+        AudioManager.instance.BgSoundStop();
+        AudioManager.instance.BgSoundPlay(AudioManager.instance.endBg);
         this.game_ui.SetActive(false);
         this.gameover_ui.SetActive(true);
         this.Timer.GetComponent<Timer_control>().timerOn = false;
@@ -93,10 +102,6 @@ export default class GameManager extends ZepetoScriptBehaviour {
         
         for (let idx = this.lifeBox.length; idx > this.CurrentLifeCnt; idx--)
             this.lifeBox[idx - 1].sprite = this.IifeOffImg;
-    }
-
-    private bgsoundOff() {
-        AudioManager.GetInstance().BgSoundStop();
     }
 
     private optionOn() {

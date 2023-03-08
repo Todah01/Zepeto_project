@@ -2,6 +2,7 @@ import { AudioClip, AudioSource, GameObject, Mathf, Object } from 'UnityEngine'
 import { AudioMixer } from 'UnityEngine.Audio';
 import { LoadSceneMode, Scene, SceneManager } from 'UnityEngine.SceneManagement';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { Text } from 'UnityEngine.UI'
 
 export default class AudioManager extends ZepetoScriptBehaviour {
 
@@ -9,6 +10,7 @@ export default class AudioManager extends ZepetoScriptBehaviour {
     public bgSound: AudioSource;
     public baseBg: AudioClip;
     public endBg: AudioClip;
+    public sound_name: Text;
 
     private static audio_Instance: AudioManager;
 
@@ -52,6 +54,7 @@ export default class AudioManager extends ZepetoScriptBehaviour {
     public BgSoundPlay(clip: AudioClip) {
         // this.bgSound.outputAudioMixerGroup = this.mixer.FindMatchingGroups("BGSound")[0];
         this.bgSound.clip = clip;
+        this.sound_name.text = clip.name;
         this.bgSound.loop = true;
         this.bgSound.volume = 0.2;
         this.bgSound.Play();

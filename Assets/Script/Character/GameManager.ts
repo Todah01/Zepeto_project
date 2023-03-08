@@ -18,6 +18,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public game_ui: GameObject;
     public gameover_ui: GameObject;
     public option_ui: GameObject;
+    public sound_ui: GameObject;
     public MainData: GameObject;
     public Timer: GameObject;
     public gameoverField: GameObject;
@@ -51,10 +52,12 @@ export default class GameManager extends ZepetoScriptBehaviour {
             AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             if (this.optionbgmOff) {
                 AudioManager.instance.BgSoundReplay();
+                this.sound_ui.SetActive(true);
                 this.optionbgmOff = false;
             }
             else {
                 AudioManager.instance.BgSoundPause();
+                this.sound_ui.SetActive(false);
                 this.optionbgmOff = true;
             }  
         }); 

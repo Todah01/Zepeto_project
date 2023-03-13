@@ -51,37 +51,37 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     Start() {
         this.btn_yes.onClick.AddListener(() => {
             this.normal_quiz_end();
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
         });
         this.btn_no.onClick.AddListener(() => {
             this.exit_ui.SetActive(false);
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
         });
         this.btn_exit.onClick.AddListener(() => {
             this.exit_ui.SetActive(true);
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
         });
         // Normal Quiz UI Event.
         this.btn_easy.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_medium.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_hard.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
             this.normal_quiz_select_tab.SetActive(false);
             this.normal_quiz_quiz_tab.SetActive(true);
         });
 
         this.btn_hint.onClick.AddListener(() => {
-            AudioManager.GetInstance().SFXPlay("btnTouch", this.clip);
+            AudioManager.instance.SFXPlay("btnTouch", this.clip);
             this.cloud_cnt = this.CloudCntData.GetComponent<MainData>().CloudCnt;
 
             if (this.hint_cnt < 2 && this.cloud_cnt > 0) {

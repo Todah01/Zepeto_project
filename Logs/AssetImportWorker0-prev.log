@@ -15,11 +15,11 @@ C:/Users/wobo5/PersonalProject/Zepeto_project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63842
+64324
 Successfully changed project path to: C:/Users/wobo5/PersonalProject/Zepeto_project
 C:/Users/wobo5/PersonalProject/Zepeto_project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 118.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 112.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -39,24 +39,24 @@ Initialize mono
 Mono path[0] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002910 seconds.
+Registered in 0.166310 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 83.65 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.411 seconds
+- Completed reload, in  4.383 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.204415 seconds.
+Registered in 2.965464 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 121.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 112.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
@@ -95,7 +95,7 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
+- Completed reload, in  4.651 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -103,38 +103,649 @@ Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not fou
 Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
 Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
 Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 3.24 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2672 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 147.7 MB.
 System memory in use after: 147.9 MB.
 
 Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 3228.
-Total: 10.091200 ms (FindLiveObjects: 0.648300 ms CreateObjectMapping: 0.116100 ms MarkObjects: 8.982000 ms  DeleteObjects: 0.342900 ms)
+Total: 5.629300 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.074200 ms MarkObjects: 4.963900 ms  DeleteObjects: 0.231100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Script/Character/AudioManager.ts
-  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e789c3b713ffb614a06231aea00af8') in 0.174182 seconds
-  Import took 0.180835 seconds .
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a29862f1c7a386e504420b193cc01b') in 0.145901 seconds
+  Import took 0.152587 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 319.775456 seconds.
+  Time since last request: 208.465548 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001512 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.164841 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001344 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.126734 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001454 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039270 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001980 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.007038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023574 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001574 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021764 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001249 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024465 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001276 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023713 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001659 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025863 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001264 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023922 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001639 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023957 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001168 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024244 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001227 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030859 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001201 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.004950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035292 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001569 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024064 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001265 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023166 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001263 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024483 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001187 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022952 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001215 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.004906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024101 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002122 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020812 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001259 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023259 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001217 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.004786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021396 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001251 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038630 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004430 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.008781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020893 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001244 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.004954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022744 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001561 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020344 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001479 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023867 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001444 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024010 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001185 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021461 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001222 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.004896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021983 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001333 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023289 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001311 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024706 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001915 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033296 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001343 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.006123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021933 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001220 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027412 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001185 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022476 seconds.
+  path: Assets/Script/Character/GameManager.ts
+  artifactKey: Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/GameManager.ts using Guid(149f375458d0c4a438ecdbeac08de510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001283 seconds
+  ERROR: Build asset version error: assets/script/character/gamemanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1449181Z' while content on disk has modification time of '2023-03-08T07:49:19.9251028Z'
+  Import took 0.005328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043788 seconds.
   path: Assets/Script/Character/AudioManager.ts
   artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec98254cf19db9bb9ce30efe2924757') in 0.003718 seconds
-  Import took 0.010144 seconds .
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78faef70bbe20677309ef4b17ccff28') in 0.008227 seconds
+  Import took 0.014516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.876496 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001574 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.104440 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001208 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025914 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001127 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020398 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001128 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.004940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021456 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001038 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.006054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.119753 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001144 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.004897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019809 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001155 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.004984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022182 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001226 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020220 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001084 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028142 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001409 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034546 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001254 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023294 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001157 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021152 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001065 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021641 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001361 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022005 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001244 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021776 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001097 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022865 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001093 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023384 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001050 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022950 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001043 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.004808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024486 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001227 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033902 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001454 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020352 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001163 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028425 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001313 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028409 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001128 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021449 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001097 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022426 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001376 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020316 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001292 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.006043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022564 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001274 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027916 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001394 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021390 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001140 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026759 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001125 seconds
+  ERROR: Build asset version error: assets/script/character/audiomanager.ts.meta in SourceAssetDB has modification time of '2023-03-07T10:28:30.1419875Z' while content on disk has modification time of '2023-03-08T07:50:43.1962828Z'
+  Import took 0.005070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.073437 seconds.
+  path: Assets/Script/Character/AudioManager.ts
+  artifactKey: Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Character/AudioManager.ts using Guid(9ab6c225258c4c945a1511e64333c1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84c1c72bf8b982e47f41ef881ac9651') in 0.004343 seconds
+  Import took 0.011661 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.042830 seconds.
+Registered in 0.041737 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
@@ -173,275 +784,57 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.183 seconds
+- Completed reload, in  1.169 seconds
 Platform modules already initialized, skipping
 Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
 Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
 Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
 Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 137.5 MB.
 System memory in use after: 137.7 MB.
 
 Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3231.
-Total: 5.360100 ms (FindLiveObjects: 0.377600 ms CreateObjectMapping: 0.070300 ms MarkObjects: 4.851400 ms  DeleteObjects: 0.058600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.062026 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.220 seconds
-Platform modules already initialized, skipping
-Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
-Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
-Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
-Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 137.6 MB.
-System memory in use after: 137.8 MB.
-
-Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3234.
-Total: 5.412800 ms (FindLiveObjects: 0.400400 ms CreateObjectMapping: 0.069600 ms MarkObjects: 4.890900 ms  DeleteObjects: 0.050000 ms)
+Total: 7.138300 ms (FindLiveObjects: 0.498200 ms CreateObjectMapping: 0.095200 ms MarkObjects: 6.471100 ms  DeleteObjects: 0.071900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1188.671378 seconds.
-  path: Assets/Resources/Audio/SFX/Ma Sfx 8Bit Bubbles 3 by Dneproman Id-334714.wav
-  artifactKey: Guid(1dad7093d524d11429ca59438976b328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Audio/SFX/Ma Sfx 8Bit Bubbles 3 by Dneproman Id-334714.wav using Guid(1dad7093d524d11429ca59438976b328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c83b831d58a3b204b64e0adeef3d9d') in 0.134699 seconds
-  Import took 0.140704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 277.499857 seconds.
-  path: Assets/Resources/Audio/Mixer.mixer
-  artifactKey: Guid(009dafa8456402b49960cc2eb2c9d9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Audio/Mixer.mixer using Guid(009dafa8456402b49960cc2eb2c9d9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a50804d2d8ed7fff8c3d373e7d4bce7') in 0.013037 seconds
-  Import took 0.018620 seconds .
+  Time since last request: 173.255930 seconds.
+  path: Assets/Resources/Audio/BGM/Wind by Black Boe.wav
+  artifactKey: Guid(f4317cbd92c8ca44d94129eb9b0e0d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Audio/BGM/Wind by Black Boe.wav using Guid(f4317cbd92c8ca44d94129eb9b0e0d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e0ca6f497a887dc57c15d317691992') in 0.094199 seconds
+  Import took 0.099654 seconds .
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.056873 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.96 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
-Platform modules already initialized, skipping
 Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
 Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
 Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
 Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 39.25 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.8 MB.
+Unloading 116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.6 MB.
 
-Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3246.
-Total: 6.218900 ms (FindLiveObjects: 0.354900 ms CreateObjectMapping: 0.070200 ms MarkObjects: 5.735300 ms  DeleteObjects: 0.056300 ms)
+Unloading 116 unused Assets to reduce memory usage. Loaded Objects now: 3240.
+Total: 6.910500 ms (FindLiveObjects: 0.307100 ms CreateObjectMapping: 0.069000 ms MarkObjects: 6.445900 ms  DeleteObjects: 0.087000 ms)
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.059459 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.94 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.252 seconds
-Platform modules already initialized, skipping
 Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
 Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
 Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
 Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 38.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.8 MB.
+Unloading 116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.6 MB.
 
-Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3249.
-Total: 5.594900 ms (FindLiveObjects: 0.331400 ms CreateObjectMapping: 0.067100 ms MarkObjects: 5.134100 ms  DeleteObjects: 0.060700 ms)
+Unloading 116 unused Assets to reduce memory usage. Loaded Objects now: 3240.
+Total: 5.373500 ms (FindLiveObjects: 0.293500 ms CreateObjectMapping: 0.069300 ms MarkObjects: 4.977200 ms  DeleteObjects: 0.032800 ms)
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.055453 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.228 seconds
-Platform modules already initialized, skipping
-Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
-Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
-Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
-Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.8 MB.
-
-Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3252.
-Total: 5.707900 ms (FindLiveObjects: 0.276600 ms CreateObjectMapping: 0.073500 ms MarkObjects: 5.313900 ms  DeleteObjects: 0.042800 ms)
-
-AssetImportWorkerClient::OnTransportError - code=1236 error=네트워크 연결이 로컬 시스템에 의해 취소되었습니다.
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

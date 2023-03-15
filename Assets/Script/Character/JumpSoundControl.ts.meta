@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 4e0a98f4c5b7518468aace374d2a57ac
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    AudioManager_1 = require(\"./AudioManager\");\r\nclass JumpSoundControl extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    JumpSoundControl() {\r\n       
+    AudioManager_1.default.instance.SFXPlay(\"jump\", this.JumpSoundClip);\r\n   
+    }\r\n}\r\nexports.default = JumpSoundControl;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSnVtcFNvdW5kQ29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkp1bXBTb3VuZENvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsaURBQTBDO0FBRTFDLE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUl4RCxnQkFBZ0I7UUFDbkIsc0JBQVksQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBRSxJQUFJLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDOUQsQ0FBQztDQUNKO0FBUEQsbUNBT0MifQ==","assetPath":"Assets/Script/Character/JumpSoundControl.ts","manifest":{"properties":[{"assembly":"UnityEngine.AudioModule","name":"JumpSoundClip","type":"UnityEngine.AudioClip","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"JumpSoundControl","description":""},"isCompiled":true}'
+  typescriptHash: 04192fd7385f8a6f9585b1008ca170cd
+  onlyWriteTrigger: 0

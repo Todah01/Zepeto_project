@@ -8,6 +8,7 @@ public class SoundControl : MonoBehaviour
     public AudioClip RunningClip;
 
     private GameObject tempObject;
+    private bool isRun = false;
 
     public void JumpSoundPlay()
     {
@@ -15,11 +16,15 @@ public class SoundControl : MonoBehaviour
     }
     public void RunningSoundPlay()
     {
+        if (isRun) return;
+
+        isRun = true;
         SFXControl(RunningClip.name, RunningClip);
     }
     public void SoundStop()
     {
         Destroy(tempObject);
+        isRun = false;
     }
 
     public void SFXControl(string sfxName, AudioClip clip)
@@ -30,9 +35,12 @@ public class SoundControl : MonoBehaviour
         // audioSource.outputAudioMixerGroup = this.mixer.FindMatchingGroups("SFX")[0];
         audioSource.clip = clip;
         audioSource.volume = 1f;
-        if (clip.name == "RunningClip")
+        if (clip.name == "running")
             audioSource.loop = true;
         audioSource.Play();
+
+        if (clip.name == "jumping")
+            Destroy(tempObject, clip.length);
     }
 
 

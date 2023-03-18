@@ -11,60 +11,37 @@ ZEPETO Multiplay Bootstrap
 ===================================================
 sandboxWorldId : 'com.company.todah.personal'
 sandboxWorldVersion : '0.1'
-sandboxMaxClients : 8
 sandboxPackageVersion : '1.1.13'
-gatewayPort : 54375
+gatewayPort : 65146
 host : '172.30.1.55'
 ===================================================
 Source File :  C:\Users\wobo5\PersonalProject\Zepeto_project\Assets\World.multiplay\index.ts
-[info] 2023-03-16T09:26:25.476Z gameserver 172.30.1.55:0 listen
-[info] 2023-03-16T09:26:39.247Z gameserver multiplay room application created.
-join player, USER_DLQ7jG9w54q
-[info] 2023-03-16T09:26:39.628Z gameserver session [USER_DLQ7jG9w54q] in room [ROOM_yOqwinjgx] joined.
-master->, USER_DLQ7jG9w54q
-leave player, USER_DLQ7jG9w54q
+[info] 2023-03-18T06:35:36.926Z gameserver 172.30.1.55:0 listen
+[info] 2023-03-18T06:35:47.190Z gameserver multiplay room application created.
+join player, USER_C9ZuFyJrS5v
+[info] 2023-03-18T06:35:47.583Z gameserver session [USER_C9ZuFyJrS5v] in room [ROOM_2y3K3pXAx] joined.
+master->, USER_C9ZuFyJrS5v
+join player, USER_nrAEbfGXUIk
+[info] 2023-03-18T06:37:36.063Z gameserver session [USER_nrAEbfGXUIk] in room [ROOM_2y3K3pXAx] joined.
+master->, USER_C9ZuFyJrS5v
+leave player, USER_C9ZuFyJrS5v
+master->, USER_nrAEbfGXUIk
+[info] 2023-03-18T06:37:39.973Z gameserver session [USER_C9ZuFyJrS5v] in room [ROOM_2y3K3pXAx] leaved.
+leave player, USER_nrAEbfGXUIk
 master->, undefined
-[info] 2023-03-16T09:35:28.597Z gameserver session [USER_DLQ7jG9w54q] in room [ROOM_yOqwinjgx] leaved.
-[info] 2023-03-16T09:35:41.675Z gameserver multiplay room application created.
-join player, USER_QmSrnK8plft
-[info] 2023-03-16T09:35:41.808Z gameserver session [USER_QmSrnK8plft] in room [ROOM_4VDaXgSKv] joined.
-master->, USER_QmSrnK8plft
-leave player, USER_QmSrnK8plft
+[info] 2023-03-18T06:44:09.066Z gameserver session [USER_nrAEbfGXUIk] in room [ROOM_2y3K3pXAx] leaved.
+[info] 2023-03-18T06:44:28.805Z gameserver multiplay room application created.
+join player, USER_vt25XhCRFPS
+[info] 2023-03-18T06:44:28.951Z gameserver session [USER_vt25XhCRFPS] in room [ROOM_PWYF_3vwA] joined.
+master->, USER_vt25XhCRFPS
+leave player, USER_vt25XhCRFPS
 master->, undefined
-[info] 2023-03-16T09:36:52.651Z gameserver session [USER_QmSrnK8plft] in room [ROOM_4VDaXgSKv] leaved.
-[info] 2023-03-16T09:48:56.890Z gameserver multiplay room application created.
-join player, USER_p7PxkStvKRq
-[info] 2023-03-16T09:48:57.028Z gameserver session [USER_p7PxkStvKRq] in room [ROOM_IgKZeUVOz] joined.
-master->, USER_p7PxkStvKRq
-leave player, USER_p7PxkStvKRq
+[info] 2023-03-18T06:45:53.931Z gameserver session [USER_vt25XhCRFPS] in room [ROOM_PWYF_3vwA] leaved.
+[info] 2023-03-18T06:46:11.153Z gameserver multiplay room application created.
+join player, USER_eivSSty_B2a
+[info] 2023-03-18T06:46:11.297Z gameserver session [USER_eivSSty_B2a] in room [ROOM_rBs56cBlz] joined.
+master->, USER_eivSSty_B2a
+leave player, USER_eivSSty_B2a
 master->, undefined
-[info] 2023-03-16T09:50:37.454Z gameserver session [USER_p7PxkStvKRq] in room [ROOM_IgKZeUVOz] leaved.
-[info] 2023-03-16T09:50:54.072Z gameserver multiplay room application created.
-join player, USER_fH9tsj_JVfV
-[info] 2023-03-16T09:50:54.243Z gameserver session [USER_fH9tsj_JVfV] in room [ROOM_hhpHjDrsP] joined.
-master->, USER_fH9tsj_JVfV
-leave player, USER_fH9tsj_JVfV
-master->, undefined
-[info] 2023-03-16T09:51:34.891Z gameserver session [USER_fH9tsj_JVfV] in room [ROOM_hhpHjDrsP] leaved.
-[info] 2023-03-16T09:52:02.992Z gameserver multiplay room application created.
-join player, USER_AWx6wENwvkK
-[info] 2023-03-16T09:52:03.159Z gameserver session [USER_AWx6wENwvkK] in room [ROOM_70OfJ4RJI] joined.
-master->, USER_AWx6wENwvkK
-leave player, USER_AWx6wENwvkK
-master->, undefined
-[info] 2023-03-16T11:22:17.960Z gameserver session [USER_AWx6wENwvkK] in room [ROOM_70OfJ4RJI] leaved.
-[info] 2023-03-16T11:22:24.022Z gameserver multiplay room application created.
-join player, USER_icLAF0hskrJ
-[info] 2023-03-16T11:22:24.210Z gameserver session [USER_icLAF0hskrJ] in room [ROOM_5mr4rQBGG] joined.
-master->, USER_icLAF0hskrJ
-leave player, USER_icLAF0hskrJ
-master->, undefined
-[info] 2023-03-16T11:23:57.047Z gameserver session [USER_icLAF0hskrJ] in room [ROOM_5mr4rQBGG] leaved.
-[info] 2023-03-16T11:24:11.740Z gameserver multiplay room application created.
-join player, USER_Yp317bOBBAh
-[info] 2023-03-16T11:24:11.909Z gameserver session [USER_Yp317bOBBAh] in room [ROOM_HNaL0pkZO] joined.
-master->, USER_Yp317bOBBAh
-leave player, USER_Yp317bOBBAh
-master->, undefined
-[info] 2023-03-16T11:25:08.299Z gameserver session [USER_Yp317bOBBAh] in room [ROOM_HNaL0pkZO] leaved.
+[info] 2023-03-18T06:51:46.353Z gameserver session [USER_eivSSty_B2a] in room [ROOM_rBs56cBlz] leaved.
 no activity in the process and it terminate

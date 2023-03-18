@@ -34,13 +34,21 @@ public class SoundControl : MonoBehaviour
         AudioSource audioSource = tempObject.AddComponent<AudioSource>();
         // audioSource.outputAudioMixerGroup = this.mixer.FindMatchingGroups("SFX")[0];
         audioSource.clip = clip;
-        audioSource.volume = 1f;
         if (clip.name == "running")
+        {
+            audioSource.volume = 1f;
             audioSource.loop = true;
+        }
+        else
+        {
+            audioSource.volume = 0.15f;
+        }
         audioSource.Play();
 
         if (clip.name == "jumping")
+        {
             Destroy(tempObject, clip.length);
+        } 
     }
 
 

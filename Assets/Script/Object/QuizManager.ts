@@ -39,7 +39,7 @@ export default class QuizManager extends ZepetoScriptBehaviour {
 
     public cur_title: string = "";
     public cur_question: string = "";
-    private cur_answer: string = "";
+    private cur_answer: string = "Neymar Jr.";
 
     private cloud_cnt: int = 0;
     private hint_cnt: int = 0;

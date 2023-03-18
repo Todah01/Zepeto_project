@@ -1,21 +1,21 @@
-﻿,type,title,description,hint_check,hint1,hint2,answer,,
-0,nonsense,,"What is always coming, but never arrives?",0,,,Tomorrow,,
-,nonsense,,"What is it that lives if it is fed, and dies if you give it a drink?",0,,,Fire,,
-,nonsense,,"What is it that if you have, you want to share me, and if you share, you do not have?",0,,,A secret,,
-,nonsense,,"What begins with T, finishes with T, and has T in it?",0,,,A teapot.,,
-,riddle,What am I?,"You cut me, slice me, dice me, and all the while, you cry. ",0,,,An onion.,,
-,riddle,What am I?,I'm a bird.,1,I'm a person.,I'm a fruit.,A Kiwi.,,
-,nonsense,,What do you call a cat who loves to swim?,0,,,A catfish.,,
-,riddle,What am I?,"When I'm ripe, I'm green.",1,"When you eat me, I'm red.","When you spit me out, I'm black.",A watermelon.,,
-,riddle,What am I?,I'm the father of fruits.,0,,,A papa-ya.,,
-,riddle,What am I?,"The more you take, the more you leave behind.",0,,,Footsteps.,,
-,nonsense,,What goes up but never comes back down?,0,,,Your age.,,
-,nonsense,,What can you catch but not throw?,0,,,A cold.,,
-,nonsense,,What has hands but doesn't clap?,0,,,A clock.,,
-,nonsense,What am I?,I have legs but cannot walk.,0,,,A chair.,,
-,nonsense,What am I?,"The more of this there is, the less you see.",0,,,Darkness.,,
-,nonsense,What am I?,I can rush.,1,"I can be cold, I can be hot.","I can be hard, I can slip through anything.",Water.,,
-,nonsense,,What travels around the world but stays in one spot?,0,,, A stamp.,,
-,nonsense,,"What belongs to you, but other people use it more?",0,,,Your name.,,
-,nonsense,,"Where can you find cities, towns, shops, and streets but no people?",0,,,A map.,,
-,nonsense,What am I?,"I'm tall when I'm young, and I'm short when I'm old.",0,,,A candle.,,
+﻿idx,type,title,description,hint_check,hint1,hint2,answer
+0,nonsense,,"What is always coming, but never arrives?",0,,,Tomorrow
+1,nonsense,,"What is it that lives if it is fed, and dies if you give it a drink?",0,,,Fire
+2,nonsense,,"What is it that if you have, you want to share me, and if you share, you do not have?",0,,,A secret
+3,nonsense,,"What begins with T, finishes with T, and has T in it?",0,,,A teapot.
+4,riddle,What am I?,"You cut me, slice me, dice me, and all the while, you cry. ",0,,,An onion.
+5,riddle,What am I?,I'm a bird.,1,I'm a person.,I'm a fruit.,A Kiwi.
+6,nonsense,,What do you call a cat who loves to swim?,0,,,A catfish.
+7,riddle,What am I?,"When I'm ripe, I'm green.",1,"When you eat me, I'm red.","When you spit me out, I'm black.",A watermelon.
+8,riddle,What am I?,I'm the father of fruits.,0,,,A papa-ya.
+9,riddle,What am I?,"The more you take, the more you leave behind.",0,,,Footsteps.
+10,nonsense,,What goes up but never comes back down?,0,,,Your age.
+11,nonsense,,What can you catch but not throw?,0,,,A cold.
+12,nonsense,,What has hands but doesn't clap?,0,,,A clock.
+13,nonsense,What am I?,I have legs but cannot walk.,0,,,A chair.
+14,nonsense,What am I?,"The more of this there is, the less you see.",0,,,Darkness.
+15,nonsense,What am I?,I can rush.,1,"I can be cold, I can be hot.","I can be hard, I can slip through anything.",Water.
+16,nonsense,,What travels around the world but stays in one spot?,0,,, A stamp.
+17,nonsense,,"What belongs to you, but other people use it more?",0,,,Your name.
+18,nonsense,,"Where can you find cities, towns, shops, and streets but no people?",0,,,A map.
+19,nonsense,What am I?,"I'm tall when I'm young, and I'm short when I'm old.",0,,,A candle.

@@ -135,7 +135,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Unity Ads is a video ad network for iOS and Android that allows
         you to quickly and effectively monetize your games.
       status: 4
@@ -259,7 +259,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -285,7 +285,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       status: 4
@@ -391,7 +391,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -485,6 +485,7 @@ m_PackageAssets:
         - 2.0.0-preview.21
         - 2.0.0-preview.22
         - 2.0.0
+        - 2.0.1
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -786,7 +787,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
@@ -833,7 +834,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -937,6 +938,8 @@ m_PackageAssets:
         - 4.5.0
         - 4.5.1
         - 4.5.2
+        - 4.6.0
+        - 4.7.0
         compatible:
         - 0.0.3
         - 0.0.4
@@ -992,6 +995,8 @@ m_PackageAssets:
         - 4.5.0
         - 4.5.1
         - 4.5.2
+        - 4.6.0
+        - 4.7.0
         verified: 3.0.2
       dependencies:
       - name: com.unity.ugui
@@ -1100,6 +1105,7 @@ m_PackageAssets:
         - 1.3.0
         - 1.3.1
         - 1.3.2
+        - 1.3.3
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1115,6 +1121,7 @@ m_PackageAssets:
         - 1.3.0
         - 1.3.1
         - 1.3.2
+        - 1.3.3
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1282,6 +1289,7 @@ m_PackageAssets:
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 4.0.0-pre.1
+        - 4.0.0-pre.2
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
@@ -1402,7 +1410,7 @@ m_PackageAssets:
         email: 
         url: 
       category: XR
-      type: 
+      type: asset
       description: This package includes the tracked pose driver for the legacy input
         system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
         Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects
@@ -1474,7 +1482,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1588,6 +1596,10 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.0
         - 1.11.0
+        - 1.11.1
+        - 1.12.0
+        - 1.12.1
+        - 1.12.2
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1612,6 +1624,10 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.0
         - 1.11.0
+        - 1.11.1
+        - 1.12.0
+        - 1.12.1
+        - 1.12.2
         verified: 
       dependencies:
       - name: zepeto.world.common
@@ -3562,6 +3578,8 @@ m_PackageAssets:
         - 1.5.0
         - 1.6.0
         - 1.6.1
+        - 1.6.2
+        - 1.6.3
         compatible:
         - 1.0.2
         - 1.0.3
@@ -3578,6 +3596,8 @@ m_PackageAssets:
         - 1.5.0
         - 1.6.0
         - 1.6.1
+        - 1.6.2
+        - 1.6.3
         verified: 
       dependencies:
       - name: com.unity.editorcoroutines
@@ -3659,6 +3679,7 @@ m_PackageAssets:
         - 1.6.0
         - 1.7.0
         - 1.7.1
+        - 1.7.2
         compatible:
         - 1.0.2
         - 1.0.3
@@ -3687,6 +3708,7 @@ m_PackageAssets:
         - 1.6.0
         - 1.7.0
         - 1.7.1
+        - 1.7.2
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -3752,6 +3774,7 @@ m_PackageAssets:
         - 1.5.0
         - 1.6.0
         - 1.6.1
+        - 1.6.2
         compatible:
         - 1.0.3
         - 1.0.4
@@ -3767,6 +3790,7 @@ m_PackageAssets:
         - 1.5.0
         - 1.6.0
         - 1.6.1
+        - 1.6.2
         verified: 
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
@@ -3830,6 +3854,8 @@ m_PackageAssets:
         - 1.4.2
         - 1.5.0
         - 1.6.0
+        - 1.6.1
+        - 1.6.2
         compatible:
         - 1.0.2
         - 1.0.3
@@ -3843,6 +3869,8 @@ m_PackageAssets:
         - 1.4.2
         - 1.5.0
         - 1.6.0
+        - 1.6.1
+        - 1.6.2
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -4141,11 +4169,13 @@ m_PackageAssets:
         - 1.0.3
         - 1.0.4
         - 1.0.5
+        - 1.0.6
         compatible:
         - 1.0.2
         - 1.0.3
         - 1.0.4
         - 1.0.5
+        - 1.0.6
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -4271,6 +4301,7 @@ m_PackageAssets:
         - 1.1.5
         - 1.1.6
         - 1.1.7
+        - 1.1.8
         compatible:
         - 1.0.2
         - 1.0.3
@@ -4283,6 +4314,7 @@ m_PackageAssets:
         - 1.1.5
         - 1.1.6
         - 1.1.7
+        - 1.1.8
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -4386,6 +4418,8 @@ m_PackageAssets:
         - 1.20.2
         - 1.21.0
         - 1.21.1
+        - 1.21.2
+        - 1.21.3
         compatible:
         - 0.0.5-preview
         - 0.0.6-preview
@@ -4440,6 +4474,8 @@ m_PackageAssets:
         - 1.20.2
         - 1.21.0
         - 1.21.1
+        - 1.21.2
+        - 1.21.3
         verified: 1.15.2
       dependencies: []
       resolvedDependencies: []
@@ -4484,7 +4520,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: 'The editor coroutines package allows developers to start constructs
         similar to Unity''s monobehaviour based coroutines within the editor using
         abitrary objects. '
@@ -4522,7 +4558,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -4548,7 +4584,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The post-processing stack (v2) comes with a collection of effects
         and image filters you can apply to your cameras to improve the visuals of
         your games.
@@ -4617,7 +4653,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -4643,7 +4679,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: 'The Unity Recorder allows you to capture and save data from the
         Unity Editor during Play Mode: animations, videos, images, audio, and more.'
       status: 4
@@ -4734,7 +4770,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -4840,7 +4876,9 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.7.3
         - 1.8.0
+        - 1.8.1
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -4870,7 +4908,9 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.7.3
         - 1.8.0
+        - 1.8.1
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -4930,7 +4970,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: library
       description: 'Newtonsoft Json for use in Unity projects and Unity packages.
         Currently synced to version 12.0.2.
 
@@ -5010,7 +5050,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Libraries
-      type: 
+      type: asset
       description: Custom version of the nunit package build to work with Unity.
         Used by the Unity Test Framework.
       status: 4
@@ -5049,7 +5089,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0

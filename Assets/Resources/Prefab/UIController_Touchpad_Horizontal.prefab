@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a1544603025f14e8a90e93e73ba572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpSoundClip: {fileID: 8300000, guid: 75f8fd70607cb3746b525b7cd85b3804, type: 3}
+  JumpSoundClip: {fileID: 8300000, guid: 4798940ed295d2941a366b8237d15d76, type: 3}
   RunningClip: {fileID: 8300000, guid: dea566c36397e1a47974c564303f7133, type: 3}
 --- !u!1 &2787167780495546287
 GameObject:

@@ -84,6 +84,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOff() {
+        console.log("gameoff_in_manager");
         AudioManager.instance.BgSoundStop();
         AudioManager.instance.BgSoundPlay(AudioManager.instance.endBg);
         this.game_ui.SetActive(false);

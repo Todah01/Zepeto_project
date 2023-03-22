@@ -13,7 +13,6 @@ export default class ProgressBar_control extends ZepetoScriptBehaviour {
 
     Update() {
         this.GetCurrentFill();
-
     }
 
     GetCurrentFill() {

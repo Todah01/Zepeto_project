@@ -15,11 +15,11 @@ C:/Users/wobo5/PersonalProject/Zepeto_project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64977
+53331
 Successfully changed project path to: C:/Users/wobo5/PersonalProject/Zepeto_project
 C:/Users/wobo5/PersonalProject/Zepeto_project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 144.24 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 189.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -39,24 +39,24 @@ Initialize mono
 Mono path[0] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Users/wobo5/PersonalProject/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003183 seconds.
+Registered in 0.003754 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 106.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.363 seconds
+- Completed reload, in  1.614 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.052623 seconds.
+Registered in 0.056145 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 109.72 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 148.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
@@ -95,7 +95,7 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.473 seconds
+- Completed reload, in  1.563 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -104,460 +104,752 @@ Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit'
 Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
 Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2673 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 147.8 MB.
 System memory in use after: 148.0 MB.
 
 Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 3229.
-Total: 6.803400 ms (FindLiveObjects: 0.511300 ms CreateObjectMapping: 0.182000 ms MarkObjects: 5.888900 ms  DeleteObjects: 0.219800 ms)
+Total: 6.301700 ms (FindLiveObjects: 0.499700 ms CreateObjectMapping: 0.249900 ms MarkObjects: 5.326000 ms  DeleteObjects: 0.224600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_idle.anim
-  artifactKey: Guid(089578e3895fc4828923286f37714b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_idle.anim using Guid(089578e3895fc4828923286f37714b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73567ec44cf5a8c11966169f000186d9') in 0.146843 seconds
-  Import took 0.152200 seconds .
+  path: Assets/Script/Object/ProgressBar_control.ts
+  artifactKey: Guid(ca9fb8618966308488e4cd33056aea16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Object/ProgressBar_control.ts using Guid(ca9fb8618966308488e4cd33056aea16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e95d27f94c944d3609b19f41f286db') in 0.151230 seconds
+  Import took 0.156575 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move.anim
-  artifactKey: Guid(ad9db15bb97a241d3941e089707ae455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move.anim using Guid(ad9db15bb97a241d3941e089707ae455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fd0229493418fbc245f6d404f94781') in 0.027789 seconds
-  Import took 0.032664 seconds .
+  Time since last request: 268.614498 seconds.
+  path: Packages/com.unity.analytics/DataPrivacy/DataPrivacyIcon.png
+  artifactKey: Guid(599a5fd92bab81a4ab02e52d0b1b1c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.analytics/DataPrivacy/DataPrivacyIcon.png using Guid(599a5fd92bab81a4ab02e52d0b1b1c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9df8033522c789e3e32726c75c41f85') in 0.085464 seconds
+  Import took 0.090666 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move_f.anim
-  artifactKey: Guid(465c72af2ce2f4ac79fc1be4aef34400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move_f.anim using Guid(465c72af2ce2f4ac79fc1be4aef34400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41813ad4f5ad5f304d59a59998c3f9f1') in 0.028562 seconds
-  Import took 0.033519 seconds .
+  Time since last request: 0.000181 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/d_popout_icon.png
+  artifactKey: Guid(bc923b5a585620e4db67e78dfa654ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/d_popout_icon.png using Guid(bc923b5a585620e4db67e78dfa654ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52cf741f7c821badf06eb600e42aa75d') in 0.017270 seconds
+  Import took 0.021889 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 90.996183 seconds.
-  path: Assets/Resources/zepeto_quiz_sample.csv
-  artifactKey: Guid(b7175c1acc53c8a4e933501ee970dbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/zepeto_quiz_sample.csv using Guid(b7175c1acc53c8a4e933501ee970dbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd647646da8be237a88164181d4677278') in 0.020506 seconds
-  Import took 0.026388 seconds .
+  Time since last request: 0.000256 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/d_movie_16.png
+  artifactKey: Guid(44305ecb1c1dd4b49b87b982320a3abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/d_movie_16.png using Guid(44305ecb1c1dd4b49b87b982320a3abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2873621412542eee0234db6c517105b1') in 0.016162 seconds
+  Import took 0.021790 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 88.448717 seconds.
-  path: Assets/Script/Character/CSVReader.ts
-  artifactKey: Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Character/CSVReader.ts using Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df48fc2b1280632b915232bd171fb44e') in 0.016701 seconds
-  Import took 0.021700 seconds .
+  Time since last request: 0.529209 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/d_customrecorder_16.png
+  artifactKey: Guid(52b9c3732a14dd14d9427ced3524773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/d_customrecorder_16.png using Guid(52b9c3732a14dd14d9427ced3524773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789e81360a25356f8532b6abd4ea4d67') in 0.015873 seconds
+  Import took 0.022101 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 556.703034 seconds.
-  path: Assets/Resources/zepeto_quiz_sample.csv
-  artifactKey: Guid(b7175c1acc53c8a4e933501ee970dbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/zepeto_quiz_sample.csv using Guid(b7175c1acc53c8a4e933501ee970dbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba519cb72475ad9120f61bda36ab512c') in 0.004863 seconds
-  Import took 0.010118 seconds .
+  Time since last request: 0.000213 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/d_imagesequence_16.png
+  artifactKey: Guid(c90fbca1bb37c1d47868781f9a7557dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/d_imagesequence_16.png using Guid(c90fbca1bb37c1d47868781f9a7557dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9e04de13311ebde2149de4d0847dc9') in 0.014322 seconds
+  Import took 0.019941 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2917.820866 seconds.
-  path: Assets/Script/Data/MainData.ts
-  artifactKey: Guid(d924424e203f3c74dad272b03bd647d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Data/MainData.ts using Guid(d924424e203f3c74dad272b03bd647d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5582821ddada2831832ee7ba10922f') in 0.015553 seconds
-  Import took 0.024487 seconds .
+  Time since last request: 1.272962 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/customrecorder_16.png
+  artifactKey: Guid(e37930a0cc67be24bb961bcb1f8513a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/customrecorder_16.png using Guid(e37930a0cc67be24bb961bcb1f8513a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8deac24453b1ab2ca1b42bad8ef38c') in 0.015256 seconds
+  Import took 0.021050 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000670 seconds.
-  path: Assets/Script/Data/MainData.ts
-  artifactKey: Guid(d924424e203f3c74dad272b03bd647d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Data/MainData.ts using Guid(d924424e203f3c74dad272b03bd647d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5582821ddada2831832ee7ba10922f') in 0.005947 seconds
-  Import took 0.011315 seconds .
+  Time since last request: 4.526031 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/imagesequence_16.png
+  artifactKey: Guid(5970c978d42818b43afb0f5236f0c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/imagesequence_16.png using Guid(5970c978d42818b43afb0f5236f0c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee906c1d97faf324d0304cf8f31e511') in 0.015249 seconds
+  Import took 0.019838 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.523852 seconds.
-  path: Assets/Script/Data/CSVReader.ts
-  artifactKey: Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Data/CSVReader.ts using Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239c36bfdd3da97799dee82053f7731c') in 0.005246 seconds
-  Import took 0.010389 seconds .
+  Time since last request: 0.000681 seconds.
+  path: Packages/com.unity.recorder/Editor/Assets/imagesequence_16.png
+  artifactKey: Guid(5970c978d42818b43afb0f5236f0c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.recorder/Editor/Assets/imagesequence_16.png using Guid(5970c978d42818b43afb0f5236f0c16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee906c1d97faf324d0304cf8f31e511') in 0.009616 seconds
+  Import took 0.014783 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.076618 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.481 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.5 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3242.
+Total: 5.678100 ms (FindLiveObjects: 0.334100 ms CreateObjectMapping: 0.065900 ms MarkObjects: 5.238100 ms  DeleteObjects: 0.039000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.099802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3245.
+Total: 7.102700 ms (FindLiveObjects: 0.432500 ms CreateObjectMapping: 0.067200 ms MarkObjects: 6.518900 ms  DeleteObjects: 0.082500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.067563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.391 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3248.
+Total: 6.188500 ms (FindLiveObjects: 0.453800 ms CreateObjectMapping: 0.088200 ms MarkObjects: 5.578300 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.061859 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.682 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3251.
+Total: 5.827900 ms (FindLiveObjects: 0.460500 ms CreateObjectMapping: 0.088300 ms MarkObjects: 5.216200 ms  DeleteObjects: 0.061500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.059892 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3254.
+Total: 5.359200 ms (FindLiveObjects: 0.353300 ms CreateObjectMapping: 0.071500 ms MarkObjects: 4.885000 ms  DeleteObjects: 0.048000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.059389 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.466 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3257.
+Total: 6.230500 ms (FindLiveObjects: 0.369300 ms CreateObjectMapping: 0.067600 ms MarkObjects: 5.730600 ms  DeleteObjects: 0.061200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.054107 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3260.
+Total: 8.452900 ms (FindLiveObjects: 0.636300 ms CreateObjectMapping: 0.096700 ms MarkObjects: 7.641300 ms  DeleteObjects: 0.076700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000957 seconds.
-  path: Assets/Script/Data/CSVReader.ts
-  artifactKey: Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Data/CSVReader.ts using Guid(f3c9399304bc67d4f94e1b06c54a92b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239c36bfdd3da97799dee82053f7731c') in 0.004333 seconds
-  Import took 0.009224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.718165 seconds.
+  Time since last request: 5523.672222 seconds.
   path: Assets/Script/Object/QuizManager.ts
   artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a030b61f896837e5378f164e3f331fe') in 0.015822 seconds
-  Import took 0.021668 seconds .
+Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb023b05286727355fe94b3048227c5e') in 0.318656 seconds
+  Import took 0.323955 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 44.887561 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004312 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.009413 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.061461 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.661 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 2.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3263.
+Total: 6.294000 ms (FindLiveObjects: 0.344600 ms CreateObjectMapping: 0.068800 ms MarkObjects: 5.811100 ms  DeleteObjects: 0.067800 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.176532 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003186 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.008450 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.062920 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.440 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3266.
+Total: 5.367000 ms (FindLiveObjects: 0.352700 ms CreateObjectMapping: 0.071900 ms MarkObjects: 4.892200 ms  DeleteObjects: 0.048900 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.008071 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003622 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.009767 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.056864 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.59 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3269.
+Total: 6.907600 ms (FindLiveObjects: 0.344700 ms CreateObjectMapping: 0.067400 ms MarkObjects: 6.440200 ms  DeleteObjects: 0.053500 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.025375 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002578 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.007156 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.069247 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Common.APIHostEditor..ctor () [0x00006] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+  at ZEPETO.World.Common.APIHostInitializer..cctor () [0x00000] in <1a219a6a8cd249cba8ce1420b658e55e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.023848 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002311 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006959 seconds .
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.031341 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002007 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006211 seconds .
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00016] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00001] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x00011] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00027] in <17d47687802b4655aaafb797c8c934f8>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x0000a] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00047] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.025286 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002946 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.007858 seconds .
+NullReferenceException: Object reference not set to an instance of an object
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00014] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
+  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00000] in <78f5b00d13564108b56eb3cd14e5fc8d>:0 
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.026617 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001933 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006216 seconds .
+Mono: successfully reloaded assembly
+- Completed reload, in  1.439 seconds
+Platform modules already initialized, skipping
+Shader 'BuildItAssets/Stable/Water/Cube': fallback shader 'Mobile/Unlit' not found
+Shader 'Jason/Build It/Water UV Scroll No Light': fallback shader 'Mobile/Unlit' not found
+Shader 'Wit/StandardTransparent_js': fallback shader 'Wit/Standard(NoColor)' not found
+Shader 'Jason/Build It/Water No Light': fallback shader 'Mobile/Unlit' not found
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027067 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001841 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025646 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001847 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028602 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001615 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028280 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001638 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026830 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001628 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026220 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001624 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028625 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001582 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032979 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001579 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038013 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001450 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.036621 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001365 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.005936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028852 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001392 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026841 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001884 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027120 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001685 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.007301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024734 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001568 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028674 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001689 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025922 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001641 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027784 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001626 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026486 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001624 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028532 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001668 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029903 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001766 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032892 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002776 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.008057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038484 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001818 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.007094 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.051280 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002158 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.008231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.064388 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001666 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.014650 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024474 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003864 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.009831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029860 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001778 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.008069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030051 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005451 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.013124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027281 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005212 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.012093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027275 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001862 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.007008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028535 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001726 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.006878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028087 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001334 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.005539 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026712 seconds.
-  path: Assets/Script/Object/QuizManager.ts
-  artifactKey: Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Object/QuizManager.ts using Guid(23f72df3eaf9ed0408695351402c7076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001407 seconds
-  ERROR: Build asset version error: assets/script/object/quizmanager.ts.meta in SourceAssetDB has modification time of '2023-03-13T11:32:30.3137387Z' while content on disk has modification time of '2023-03-18T08:35:57.1860116Z'
-  Import took 0.005601 seconds .
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 3272.
+Total: 7.337800 ms (FindLiveObjects: 0.416600 ms CreateObjectMapping: 0.095400 ms MarkObjects: 6.766200 ms  DeleteObjects: 0.057400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

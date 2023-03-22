@@ -1,11 +1,13 @@
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import { Button } from 'UnityEngine.UI';
+import { Button, Text } from 'UnityEngine.UI';
 import { AudioClip, GameObject } from 'UnityEngine';
 import MainData from '../Data/MainData';
 import AudioManager from '../Character/AudioManager';
+import FallChecking from '../../ZepetoScripts/MultiplaySync/Sample Code/FallChecking';
 
 export default class QuizManager extends ZepetoScriptBehaviour {
 
+    public GameOverCheck: GameObject;
     public CloudCntData: GameObject;
     public quiz_ui: GameObject;
     public normal_quiz_ui: GameObject;
@@ -26,21 +28,23 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     public btn_exit: Button;
     public btn_yes: Button;
     public btn_no: Button;
+    public btn_answer: Button;
 
-    public host_btn_complete: Button;
-    public host_title_input: Text;
-    public host_description_input: Text;
-    public host_answer: Text;
+    //public host_btn_complete: Button;
+    //public host_title_input: Text;
+    //public host_description_input: Text;
+    //public host_answer: Text;
 
-    public guest_btn_complete: Button;
-    public guest_title: Text;
-    public guest_description: Text;
-    public guest_answer: Text;
+    //public guest_btn_complete: Button;
+    //public guest_title: Text;
+    //public guest_description: Text;
+    //public guest_answer: Text;
 
     public cur_title: string = "";
     public cur_question: string = "";
-    private cur_answer: string = "Neymar Jr.";
+    private cur_answer: string = "Neymar da Silva Santos Junior";
 
+    public client_answer_text: Text;
     private cloud_cnt: int = 0;
     private hint_cnt: int = 0;
     private check_host: bool = false;
@@ -116,6 +120,21 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         //this.host_btn_complete.onClick.AddListener(() => {
             
         //});
+
+        this.btn_answer.onClick.AddListener(() => {
+            let isCorrect = this.client_answer_text.text.toLowerCase == this.cur_answer.toLowerCase;
+            console.log(isCorrect);
+
+            if (isCorrect) {
+                console.log("gameoff_in_quiz");
+                this.GameOverCheck.GetComponent<FallChecking>().isGameEnd();
+                this.client_answer_text.text = "";
+                this.normal_quiz_end();
+            }
+            else {
+
+            }
+        });
     }
 
     // Normal quiz trigger event.

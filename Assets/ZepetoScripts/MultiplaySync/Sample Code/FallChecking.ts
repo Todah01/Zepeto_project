@@ -35,10 +35,13 @@ export default class FallChecking extends ZepetoScriptBehaviour {
         this.GameManager.GetComponent<GameManager>().LifeChecking("LifeCheck");
 
         if (!this.GameManager.GetComponent<GameManager>().CurrentLifeCnt) {
-            this.GameManager.GetComponent<GameManager>().gameOff();
-            this.MainData.GetComponent<MainData>().SetScoreToLeaderboard();
-            this.GameManager.GetComponent<GameManager>().gameoverField.SetActive(true);
-            this.ResetPosition(this.endPosition);
+            this.isGameEnd();
         }
+    }
+    public isGameEnd() {
+        this.GameManager.GetComponent<GameManager>().gameOff();
+        this.MainData.GetComponent<MainData>().SetScoreToLeaderboard();
+        this.GameManager.GetComponent<GameManager>().gameoverField.SetActive(true);
+        this.ResetPosition(this.endPosition);
     }
 }

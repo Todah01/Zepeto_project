@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: ZEPETO Multiplay
+  m_Title: Hierarchy
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 83
+  controlID: 55
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 97
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 147
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 119
+  controlID: 148
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -779,7 +779,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Script/Character
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -794,7 +795,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e290000
     m_LastClickedID: 10510
-    m_ExpandedIDs: 000000008c0c0000621d0000641d0000c21d0000d41d0000a61f0000e0240000f024000000250000522600001a2700003e2a00004e2f00002a3100002c3100003c310000463100006c310000783100007e3100009e31000054370000d8370000d83a0000ec3b0000143c0000403c0000863d0000883d00008a3d00002a43000060550000629e0000649e0000669e0000689e00006a9e00006c9e00006e9e0000709e0000729e0000749e0000769e0000789e0000
+    m_ExpandedIDs: 000000008a0c0000601d0000621d0000c01d0000d21d0000a41f0000a81f0000de240000ee240000fe24000050260000182700005a270000422a0000522f0000662f00008e300000323100003431000036310000423100004c31000072310000743100008031000086310000a63100005c370000e0370000e03a0000f43b00001c3c0000483c00008e3d0000903d0000923d00003243000068550000b69e0000b89e0000ba9e0000bc9e0000be9e0000c09e0000c29e0000c49e0000c69e0000c89e0000ca9e0000cc9e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -819,21 +820,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 429}
+    scrollPos: {x: 0, y: 180}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008c0c0000621d0000641d0000c21d0000d41d0000a81f0000aa1f0000e0240000f024000000250000522600001a2700003e2a00004e2f00002a3100002c3100002e3100003c310000463100006a3100006c310000783100007e3100009e31000054370000d8370000d83a0000ec3b0000143c0000403c0000863d0000883d00008a3d00002a43000060550000629e0000649e0000669e0000689e00006a9e00006c9e00006e9e0000709e0000729e0000749e0000769e0000789e0000
+    m_ExpandedIDs: ffffffff000000008a0c0000601d0000621d0000c01d0000d21d0000a81f0000de240000ee240000fe2400005026000018270000422a0000522f0000662f00008e300000323100003431000036310000423100004c31000072310000743100008031000086310000a63100005c370000e0370000e03a0000f43b00001c3c0000483c00008e3d0000903d0000923d00003243000068550000b69e0000b89e0000ba9e0000bc9e0000be9e0000c09e0000c29e0000c49e0000c69e0000c89e0000ca9e0000cc9e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Quiz_trigger_control
-      m_OriginalName: Quiz_trigger_control
+      m_Name: GameManager
+      m_OriginalName: GameManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 12628
+      m_UserData: 17248
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -943,23 +944,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: dc8c0000
-      m_LastClickedID: 36060
-      m_ExpandedIDs: 4436ffffd0f9ffff0efbfffff28800008c890000ee890000dc8c0000728d0000ec9000005c920000cc930000f49500009c970000c8970000
+      m_SelectedIDs: 6af9ffff
+      m_LastClickedID: -1686
+      m_ExpandedIDs: 0efbffff368b0000888d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: quiz_description
-        m_OriginalName: quiz_description
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 34268
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1005,9 +1006,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 28.901987, y: -4.97628, z: 78.01783}
+    m_Target: {x: 24.34417, y: -7.710688, z: -27.080303}
     speed: 2
-    m_Value: {x: 28.901987, y: -4.97628, z: 78.01783}
+    m_Value: {x: 24.34417, y: -7.710688, z: -27.080303}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1054,13 +1055,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.016457072, y: -0.9758179, z: 0.14886422, w: 0.15420325}
+    m_Target: {x: 0.0023116348, y: -0.98987436, z: 0.087356806, w: 0.104692645}
     speed: 2
-    m_Value: {x: 0.01647, y: -0.97658455, z: 0.14898117, w: 0.1543244}
+    m_Value: {x: -0.0023116346, y: 0.98987436, z: -0.087356806, w: -0.104692645}
   m_Size:
-    m_Target: 4.4660254
+    m_Target: 5.0660257
     speed: 2
-    m_Value: 4.4660254
+    m_Value: 5.0660257
   m_Ortho:
     m_Target: 0
     speed: 2

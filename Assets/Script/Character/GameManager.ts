@@ -15,6 +15,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public opbtn_friends: Button;
     public opbtn_sound: Button;
     public opbtn_exit: Button;
+
     public game_ui: GameObject;
     public gameover_ui: GameObject;
     public option_ui: GameObject;
@@ -23,6 +24,10 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public Timer: GameObject;
     public gameoverField: GameObject;
     public FallChecking: GameObject;
+    public GameEndObj: GameObject;
+    public GameOverLogo: GameObject;
+    public GameClearLogo: GameObject;
+
     public spawnposition: Vector3;
     public lifeOnImg: Sprite;
     public IifeOffImg: Sprite;
@@ -92,7 +97,25 @@ export default class GameManager extends ZepetoScriptBehaviour {
         this.Timer.GetComponent<Timer_control>().timerOn = false;
     }
 
+    public SetQuizOn(check: boolean) {
+        this.GameEndObj.SetActive(check);
+    }
+
+    public SetGameOverLogo(check: number) {
+        if (check == 1) {
+            this.GameClearLogo.SetActive(true);
+        }
+        else if (check == 2) {
+            this.GameOverLogo.SetActive(true);
+        }
+        else {
+            this.GameClearLogo.SetActive(false);
+            this.GameOverLogo.SetActive(false);
+        }
+    }
+
     public ResetSetting() {
+        this.SetQuizOn(false);
         this.CurrentLifeCnt = this.lifeBox.length;
         for (let idx = 0; idx < this.lifeBox.length; idx++)
             this.lifeBox[idx].sprite = this.lifeOnImg;

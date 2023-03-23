@@ -20,6 +20,7 @@ export default class Heart_control extends ZepetoScriptBehaviour {
             this.CloudCntData.GetComponent<MainData>().CurrentScore += 10;
             this.CloudCntData.GetComponent<MainData>().SetData();
             this.CloudCntData.GetComponent<MainData>().Save();
+            this.CloudCntData.GetComponent<MainData>().CheckGameEnd();
             this.cloud_effect.SetActive(true);
             // Object.Destroy(this.gameObject, 5);
         }

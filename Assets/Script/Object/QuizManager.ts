@@ -19,6 +19,8 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     public custom_quiz_select_tab: GameObject;
     public custom_quiz_quiz_tab: GameObject;
     public exit_ui: GameObject;
+    public answer_writen_obj: GameObject;
+
     public btn_easy: Button;
     public btn_medium: Button;
     public btn_hard: Button;
@@ -122,7 +124,7 @@ export default class QuizManager extends ZepetoScriptBehaviour {
         //});
 
         this.btn_answer.onClick.AddListener(() => {
-            let isCorrect = this.client_answer_text.text.toLowerCase == this.cur_answer.toLowerCase;
+            let isCorrect = this.client_answer_text.text == this.cur_answer;
             console.log(isCorrect);
 
             if (isCorrect) {
@@ -132,7 +134,9 @@ export default class QuizManager extends ZepetoScriptBehaviour {
                 this.normal_quiz_end();
             }
             else {
-
+                this.client_answer_text.text = "";
+                this.answer_writen_obj.SetActive(false);
+                this.answer_writen_obj.SetActive(true);
             }
         });
     }
@@ -144,6 +148,7 @@ export default class QuizManager extends ZepetoScriptBehaviour {
     }
 
     public normal_quiz_end() {
+        this.client_answer_text.text = "";
         this.exit_ui.SetActive(false);
         this.quiz_ui.SetActive(false);
         this.normal_quiz_ui.SetActive(false);

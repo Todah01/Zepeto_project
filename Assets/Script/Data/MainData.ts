@@ -36,6 +36,11 @@ export default class MainData extends ZepetoScriptBehaviour {
         //    console.error(error);
         //});
     }
+    public CheckGameEnd() {
+        if (this.CloudCnt >= 15) {
+            this.GameManager.GetComponent<GameManager>().SetQuizOn(true);
+        }
+    }
 
     public ResetSetting() {
         this.CurrentScore = 0;

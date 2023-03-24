@@ -3,11 +3,21 @@ import { Button, Image } from 'UnityEngine.UI'
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import FallChecking from '../../ZepetoScripts/MultiplaySync/Sample Code/FallChecking';
 import MainData from '../Data/MainData';
+import GameClearUI_control from '../Object/GameClearUI_control';
 import Timer_control from '../Object/Timer_control';
 import AudioManager from './AudioManager';
 
+export enum GameStateEnum {
+    GameStay,
+    GamePlay,
+    GamePause,
+    GameClear,
+    GameOver,
+}
+
 export default class GameManager extends ZepetoScriptBehaviour {
 
+    public GameState: GameStateEnum;
     public lifeBox: Image[] = [];
     public btn_retry: Button;
     public btn_exit: Button;
@@ -25,8 +35,6 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public gameoverField: GameObject;
     public FallChecking: GameObject;
     public GameEndObj: GameObject;
-    public GameOverLogo: GameObject;
-    public GameClearLogo: GameObject;
 
     public spawnposition: Vector3;
     public lifeOnImg: Sprite;
@@ -38,6 +46,8 @@ export default class GameManager extends ZepetoScriptBehaviour {
     private optionbgmOff: boolean = false;
 
     Start() {
+        this.GameState = GameStateEnum.GamePlay;
+
         this.btn_retry.onClick.AddListener(() => {
             AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
             this.gameOn();
@@ -77,10 +87,12 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOn() {
+        this.GameState = GameStateEnum.GamePlay;
         this.ResetSetting();
         this.gameover_ui.SetActive(false);
+        this.gameover_ui.GetComponent<GameClearUI_control>().ResetSetting();
         this.game_ui.SetActive(true);
-        this.Timer.GetComponent<Timer_control>().ResetSetting();
+        // this.Timer.GetComponent<Timer_control>().ResetSetting();
         this.MainData.GetComponent<MainData>().ResetSetting();
         this.FallChecking.GetComponent<FallChecking>().ResetPosition(this.spawnposition);
         this.gameoverField.SetActive(false);
@@ -89,29 +101,25 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     public gameOff() {
-        console.log("gameoff_in_manager");
         AudioManager.instance.BgSoundStop();
         AudioManager.instance.BgSoundPlay(AudioManager.instance.endBg);
         this.game_ui.SetActive(false);
         this.gameover_ui.SetActive(true);
-        this.Timer.GetComponent<Timer_control>().timerOn = false;
+
+        if (this.CurrentLifeCnt == 0) {
+            this.GameState = GameStateEnum.GameOver;
+            this.gameover_ui.GetComponent<GameClearUI_control>().SetGameLogo("Over");
+        }
+        else if (this.CurrentLifeCnt > 0) {
+            this.GameState = GameStateEnum.GameClear;
+            this.gameover_ui.GetComponent<GameClearUI_control>().SetGameLogo("Clear");
+            this.MainData.GetComponent<MainData>().StarCntEvent.Invoke();
+        }
+        // this.Timer.GetComponent<Timer_control>().timerOn = false;
     }
 
     public SetQuizOn(check: boolean) {
         this.GameEndObj.SetActive(check);
-    }
-
-    public SetGameOverLogo(check: number) {
-        if (check == 1) {
-            this.GameClearLogo.SetActive(true);
-        }
-        else if (check == 2) {
-            this.GameOverLogo.SetActive(true);
-        }
-        else {
-            this.GameClearLogo.SetActive(false);
-            this.GameOverLogo.SetActive(false);
-        }
     }
 
     public ResetSetting() {

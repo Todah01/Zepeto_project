@@ -6,8 +6,10 @@ import { Button, Text, Image } from 'UnityEngine.UI';
 import { Texture, Texture2D, Sprite, Rect, Vector2 } from 'UnityEngine';
 import { Player } from 'ZEPETO.Multiplay.Schema';
 import { List$1 } from 'System.Collections.Generic';
+import { UnityEvent } from 'UnityEngine.Events';
 import Heart_control from '../Object/Heart_control';
 import GameManager from '../Character/GameManager';
+import GameClearUI_control from '../Object/GameClearUI_control';
 
 export default class MainData extends ZepetoScriptBehaviour {
 
@@ -18,13 +20,21 @@ export default class MainData extends ZepetoScriptBehaviour {
     public CloudCnt: number;
     public bestScore: number;
     public CurrentScore: number;
+    public StarCnt: number;
     public GameManager: GameObject;
+    public GameOverManager: GameObject;
     // public Life: number = 3;
     public cloudCnt_txt: Text;
     public currentScore_txt: Text;
     public sampleImage: Image;
+    public StarCntEvent: UnityEvent;
 
     Start() {
+        // Set Event
+        this.StarCntEvent = new UnityEvent();
+        this.StarCntEvent.AddListener(() => this.StarCntPlus());
+        this.StarCntEvent.AddListener(() => this.GameOverManager.GetComponent<GameClearUI_control>().StarSetting(this.StarCnt));
+
         // Set Data
         this.Load();
         this.SetData();
@@ -36,6 +46,13 @@ export default class MainData extends ZepetoScriptBehaviour {
         //    console.error(error);
         //});
     }
+
+    private StarCntPlus() {
+        this.StarCnt++;
+        if (this.CloudCnt > 25) this.StarCnt++;
+        if (this.GameManager.GetComponent<GameManager>().CurrentLifeCnt == 3) this.StarCnt++;
+    }
+
     public CheckGameEnd() {
         if (this.CloudCnt >= 15) {
             this.GameManager.GetComponent<GameManager>().SetQuizOn(true);

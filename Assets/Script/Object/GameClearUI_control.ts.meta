@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 073633dd513092c4980c655cfd55aed0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    GameClearUI_control extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.StarList = [];\r\n    }\r\n   
+    SetGameLogo(GameState) {\r\n        if (GameState == \"Clear\")\r\n           
+    this.GameClearLogo.SetActive(true);\r\n        else if (GameState == \"Over\")\r\n           
+    this.GameOverLogo.SetActive(true);\r\n    }\r\n    StarSetting(StarCnt) {\r\n       
+    this.SetStarOnOff(StarCnt);\r\n        this.StartCoroutine(this.DoRoutine(StarCnt));\r\n   
+    }\r\n    ResetSetting() {\r\n        this.GameClearLogo.SetActive(false);\r\n       
+    this.GameOverLogo.SetActive(false);\r\n        for (let idx = 0; idx < this.StarList.length;
+    idx++) {\r\n            this.StarList[idx].GetComponent($typeof(UnityEngine_UI_1.Image)).sprite
+    = this.StarOffSprite;\r\n            this.StarList[idx].SetActive(false);\r\n       
+    }\r\n    }\r\n    SetStarOnOff(ClearCnt) {\r\n        // Set Star Img\r\n       
+    for (let idx = 0; idx < ClearCnt; idx++) {\r\n            this.StarList[idx].GetComponent($typeof(UnityEngine_UI_1.Image)).sprite
+    = this.StarOnSprite;\r\n        }\r\n    }\r\n    *DoRoutine(ClearCnt) {\r\n       
+    for (let idx = 0; idx < ClearCnt; idx++) {\r\n            yield null;\r\n           
+    yield new UnityEngine_1.WaitForSeconds(1);\r\n            this.StarList[idx].SetActive(true);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = GameClearUI_control;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZUNsZWFyVUlfY29udHJvbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdhbWVDbGVhclVJX2NvbnRyb2wudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBZ0U7QUFDaEUsbURBQXVDO0FBQ3ZDLGlEQUFxRDtBQUVyRCxNQUFxQixtQkFBb0IsU0FBUSxxQ0FBcUI7SUFBdEU7O1FBRThCLGFBQVEsR0FBaUIsRUFBRSxDQUFDO0lBeUMxRCxDQUFDO0lBbkNVLFdBQVcsQ0FBQyxTQUFpQjtRQUNoQyxJQUFJLFNBQVMsSUFBSSxPQUFPO1lBQ3BCLElBQUksQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO2FBQ2xDLElBQUksU0FBUyxJQUFJLE1BQU07WUFDeEIsSUFBSSxDQUFDLFlBQVksQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDMUMsQ0FBQztJQUVNLFdBQVcsQ0FBQyxPQUFlO1FBQzlCLElBQUksQ0FBQyxZQUFZLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDM0IsSUFBSSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7SUFDakQsQ0FBQztJQUVNLFlBQVk7UUFDZixJQUFJLENBQUMsYUFBYSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsWUFBWSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxLQUFLLElBQUksR0FBRyxHQUFHLENBQUMsRUFBRSxHQUFHLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxNQUFNLEVBQUUsR0FBRyxFQUFFLEVBQUU7WUFDakQsSUFBSSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQyxZQUFZLFNBQUMsc0JBQUssR0FBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLGFBQWEsQ0FBQztZQUNyRSxJQUFJLENBQUMsUUFBUSxDQUFDLEdBQUcsQ0FBQyxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztTQUN2QztJQUNMLENBQUM7SUFFRCxZQUFZLENBQUMsUUFBZ0I7UUFDekIsZUFBZTtRQUNmLEtBQUssSUFBSSxHQUFHLEdBQUcsQ0FBQyxFQUFFLEdBQUcsR0FBRyxRQUFRLEVBQUUsR0FBRyxFQUFFLEVBQUU7WUFDckMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQyxZQUFZLFNBQUMsc0JBQUssR0FBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQztTQUN2RTtJQUNMLENBQUM7SUFFRCxDQUFDLFNBQVMsQ0FBQyxRQUFnQjtRQUN2QixLQUFLLElBQUksR0FBRyxHQUFHLENBQUMsRUFBRSxHQUFHLEdBQUcsUUFBUSxFQUFFLEdBQUcsRUFBRSxFQUFFO1lBQ3JDLE1BQU0sSUFBSSxDQUFDO1lBQ1gsTUFBTSxJQUFJLDRCQUFjLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDNUIsSUFBSSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7U0FDdEM7SUFDTCxDQUFDO0NBQ0o7QUEzQ0Qsc0NBMkNDIn0=","assetPath":"Assets/Script/Object/GameClearUI_control.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"StarList","type":"UnityEngine.GameObject[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.CoreModule","name":"GameClearLogo","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"GameOverLogo","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"StarOnSprite","type":"UnityEngine.Sprite","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"StarOffSprite","type":"UnityEngine.Sprite","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"GameClearUI_control","description":""},"isCompiled":true}'
+  typescriptHash: 700db7257ae0c0551bea01fe9d37cbf6
+  onlyWriteTrigger: 0

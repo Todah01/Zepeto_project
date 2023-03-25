@@ -128,7 +128,6 @@ export default class QuizManager extends ZepetoScriptBehaviour {
             console.log(isCorrect);
 
             if (isCorrect) {
-                console.log("gameoff_in_quiz");
                 this.GameOverCheck.GetComponent<FallChecking>().isGameEnd();
                 this.client_answer_text.text = "";
                 this.normal_quiz_end();

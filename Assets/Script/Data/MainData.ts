@@ -21,6 +21,7 @@ export default class MainData extends ZepetoScriptBehaviour {
     public bestScore: number;
     public CurrentScore: number;
     public StarCnt: number;
+    public isClear: number;
     public GameManager: GameObject;
     public GameOverManager: GameObject;
     // public Life: number = 3;
@@ -62,6 +63,7 @@ export default class MainData extends ZepetoScriptBehaviour {
     public ResetSetting() {
         this.CurrentScore = 0;
         this.CloudCnt = 0;
+        this.isClear = 0;
         for (let idx = 0; idx < this.listCloud.length; idx++) {
             if (this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off) {
                 this.listCloud[idx].transform.GetChild(0).GetComponent<Heart_control>().cloud_off = 0;
@@ -91,7 +93,7 @@ export default class MainData extends ZepetoScriptBehaviour {
         }
 
         // console.log(strArr);
-
+        PlayerPrefs.SetInt("isClear", this.isClear);
         PlayerPrefs.SetInt("CloudCnt", this.CloudCnt);
         PlayerPrefs.SetInt("CurrentScore", this.CurrentScore);
         PlayerPrefs.SetInt("CurrentLifeCnt", this.GameManager.GetComponent<GameManager>().CurrentLifeCnt);
@@ -140,6 +142,8 @@ export default class MainData extends ZepetoScriptBehaviour {
                 this.listCloud[idx].transform.GetChild(0).gameObject.SetActive(true);
             }
         }
+
+        this.isClear = PlayerPrefs.GetInt("isClear");
     }
 
     public SetData() {

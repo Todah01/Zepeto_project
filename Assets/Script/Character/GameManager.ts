@@ -22,6 +22,8 @@ export default class GameManager extends ZepetoScriptBehaviour {
     public btn_retry: Button;
     public btn_exit: Button;
     public btn_option: Button;
+    public btn_continue: Button;
+    public btn_next: Button;
     public opbtn_friends: Button;
     public opbtn_sound: Button;
     public opbtn_exit: Button;
@@ -46,7 +48,15 @@ export default class GameManager extends ZepetoScriptBehaviour {
     private optionbgmOff: boolean = false;
 
     Start() {
-        this.GameState = GameStateEnum.GamePlay;
+        if (this.MainData.GetComponent<MainData>().isClear == 0)
+            this.GameState = GameStateEnum.GamePlay;
+        else
+            this.SetQuizOn(true);
+
+        this.btn_continue.onClick.AddListener(() => {
+            AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
+            this.gameContinue();
+        });
 
         this.btn_retry.onClick.AddListener(() => {
             AudioManager.instance.SFXPlay("btnTouch", this.btnTouchClip);
@@ -86,6 +96,15 @@ export default class GameManager extends ZepetoScriptBehaviour {
         });
     }
 
+    public gameContinue() {
+        this.FallChecking.GetComponent<FallChecking>().ResetPosition(this.spawnposition);
+        this.gameoverField.SetActive(false);
+        this.game_ui.SetActive(true);
+        this.gameover_ui.SetActive(false);
+        AudioManager.instance.BgSoundStop();
+        AudioManager.instance.BgSoundPlay(AudioManager.instance.baseBg);
+    }
+
     public gameOn() {
         this.GameState = GameStateEnum.GamePlay;
         this.ResetSetting();
@@ -112,6 +131,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
         }
         else if (this.CurrentLifeCnt > 0) {
             this.GameState = GameStateEnum.GameClear;
+            this.MainData.GetComponent<MainData>().isClear = 1;
             this.gameover_ui.GetComponent<GameClearUI_control>().SetGameLogo("Clear");
             this.MainData.GetComponent<MainData>().StarCntEvent.Invoke();
         }

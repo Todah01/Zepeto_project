@@ -304,55 +304,52 @@
       <HintPath>C:\Users\wobo5\PersonalProject\2020.3.9f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.AudioModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.AudioModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay.Script.Generated">
-      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.6.0\plugins\ZEPETO.Multiplay.Script.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.7.0\plugins\ZEPETO.Multiplay.Script.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Generated">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Generated.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\ZEPETO.World.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\ZEPETO.World.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Character.Controller.Generated">
-      <HintPath>Library\PackageCache\zepeto.character.controller@1.4.2\plugins\ZEPETO.Character.Controller.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.character.controller@1.5.0\plugins\ZEPETO.Character.Controller.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Generated">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\ZEPETO.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\ZEPETO.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Shared">
-      <HintPath>Library\PackageCache\zepeto.world.shared@1.6.1\plugins\ZEPETO.World.Shared.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world.shared@1.7.0\plugins\ZEPETO.World.Shared.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Character.Controller">
-      <HintPath>Library\PackageCache\zepeto.character.controller@1.4.2\plugins\ZEPETO.Character.Controller.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.character.controller@1.5.0\plugins\ZEPETO.Character.Controller.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Leaderboard.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.7\plugins\ZEPETO.Script.Leaderboard.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.8\plugins\ZEPETO.Script.Leaderboard.Generated.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.DirectorModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.DirectorModule.Generated.dll</HintPath>
-    </Reference>
     <Reference Include="ZEPETO.IWP.Generated">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\ZEPETO.IWP.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\ZEPETO.IWP.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Generated">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\ZEPETO.World.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\ZEPETO.World.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Build">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Build.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Build.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Environments">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Environments.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Environments.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO">
       <HintPath>Library\PackageCache\zepeto.character@3.1.13\plugins\ZEPETO.dll</HintPath>
@@ -361,19 +358,19 @@
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.AnimationModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.AnimationModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Buildit.Loader.Editor">
       <HintPath>Library\PackageCache\zepeto.buildit.loader@0.0.3\plugins\ZEPETO.Buildit.Loader.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Leaderboard.Editor">
-      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.7\plugins\ZEPETO.Script.Leaderboard.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.8\plugins\ZEPETO.Script.Leaderboard.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Common.Editor">
       <HintPath>Library\PackageCache\zepeto.world.common@1.0.1\plugins\ZEPETO.World.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay.Script">
-      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.6.0\plugins\ZEPETO.Multiplay.Script.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.7.0\plugins\ZEPETO.Multiplay.Script.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\Unity.Analytics.Tracker.dll</HintPath>
@@ -382,52 +379,52 @@
       <HintPath>Library\PackageCache\zepeto.iwp@1.2.1\plugins\ZEPETO.IWP.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Shared.Generated">
-      <HintPath>Library\PackageCache\zepeto.world.shared@1.6.1\plugins\ZEPETO.World.Shared.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world.shared@1.7.0\plugins\ZEPETO.World.Shared.Generated.dll</HintPath>
     </Reference>
     <Reference Include="UniRx">
       <HintPath>Library\PackageCache\zepeto.character@3.1.13\plugins\UniRx.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.TerrainModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.TerrainModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Chat">
       <HintPath>Library\PackageCache\zepeto.chat@1.0.1\plugins\ZEPETO.Chat.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Editor.Shared">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Editor.Shared.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.IWP">
       <HintPath>Library\PackageCache\zepeto.iwp@1.2.1\plugins\ZEPETO.IWP.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.Generated">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\Unity.InputSystem.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\Unity.InputSystem.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Generator">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Generator.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Generator.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.AssetBundleModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.AssetBundleModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.InputLegacyModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.InputLegacyModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Editor">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\ZEPETO.World.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\ZEPETO.World.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.PhysicsModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.PhysicsModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay">
-      <HintPath>Library\PackageCache\zepeto.multiplay@1.6.1\plugins\ZEPETO.Multiplay.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay@1.7.0\plugins\ZEPETO.Multiplay.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime.Patch">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\Unity.Postprocessing.Runtime.Patch.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\Unity.Postprocessing.Runtime.Patch.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay.Script.Editor">
-      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.6.0\plugins\ZEPETO.Multiplay.Script.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.7.0\plugins\ZEPETO.Multiplay.Script.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Leaderboard">
-      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.7\plugins\ZEPETO.Script.Leaderboard.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.leaderboard@1.1.8\plugins\ZEPETO.Script.Leaderboard.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Asset">
       <HintPath>Library\PackageCache\zepeto.asset@1.0.11\plugins\ZEPETO.Asset.dll</HintPath>
@@ -439,10 +436,10 @@
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay.Editor">
-      <HintPath>Library\PackageCache\zepeto.multiplay@1.6.1\plugins\ZEPETO.Multiplay.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay@1.7.0\plugins\ZEPETO.Multiplay.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Shared.Editor">
-      <HintPath>Library\PackageCache\zepeto.world.shared@1.6.1\plugins\ZEPETO.World.Shared.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world.shared@1.7.0\plugins\ZEPETO.World.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Buildit.Loader">
       <HintPath>Library\PackageCache\zepeto.buildit.loader@0.0.3\plugins\ZEPETO.Buildit.Loader.dll</HintPath>
@@ -454,34 +451,34 @@
       <HintPath>Library\PackageCache\zepeto.chat@1.0.1\plugins\ZEPETO.Chat.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Puerts.PInvoke">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\Default\ZEPETO.Script.Puerts.PInvoke.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\Default\ZEPETO.Script.Puerts.PInvoke.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Chat.Editor">
       <HintPath>Library\PackageCache\zepeto.chat@1.0.1\plugins\ZEPETO.Chat.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Compiler">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Compiler.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Character.Controller.Editor">
-      <HintPath>Library\PackageCache\zepeto.character.controller@1.4.2\plugins\ZEPETO.Character.Controller.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.character.controller@1.5.0\plugins\ZEPETO.Character.Controller.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Script.Editor">
-      <HintPath>Library\PackageCache\zepeto.script@1.7.1\plugins\ZEPETO.Script.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script@1.8.0\plugins\ZEPETO.Script.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Editor">
       <HintPath>Library\PackageCache\zepeto.character@3.1.13\plugins\ZEPETO.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.Multiplay.Generated">
-      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.6.0\plugins\ZEPETO.Multiplay.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.multiplay.script@1.7.0\plugins\ZEPETO.Multiplay.Generated.dll</HintPath>
     </Reference>
     <Reference Include="ZEPETO.World.Common">
       <HintPath>Library\PackageCache\zepeto.world.common@1.0.1\plugins\ZEPETO.World.Common.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule.Generated">
-      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.5\plugins\UnityEngine.CoreModule.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.script.unityengine.typings@1.0.6\plugins\UnityEngine.CoreModule.Generated.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Generated">
-      <HintPath>Library\PackageCache\zepeto.world@1.11.0\plugins\Unity.Timeline.Generated.dll</HintPath>
+      <HintPath>Library\PackageCache\zepeto.world@1.13.0\plugins\Unity.Timeline.Generated.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Users\wobo5\PersonalProject\2020.3.9f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
